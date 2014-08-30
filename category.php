@@ -11,7 +11,9 @@ if (is_page('gateway')) {
 				the_post(); ?>
 				<p style="margin-top: 1%;" class="text-justified">
 					<h1 class="text-center"><?php the_title(); ?> <small><?php the_time('F jS, Y'); ?></small></h1>
-					<?php the_content(); ?>
+					<?php 
+					the_content();
+					?>
 				</p>
 			<?php }
 		} ?>
@@ -20,7 +22,7 @@ if (is_page('gateway')) {
 </div>
 <?php
 }
-if ( is_front_page() ) {
+if (is_page('gateway')) {
     get_footer('home');
 }else{
 	get_footer();
