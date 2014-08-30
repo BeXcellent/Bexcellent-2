@@ -11,14 +11,17 @@ if (is_page('gateway')) {
 				the_post(); ?>
 				<p style="margin-top: 1%;" class="text-justified">
 					<h1 class="text-center"><?php the_title(); ?> <small><?php the_time('F jS, Y'); ?></small></h1>
-					<?php the_content(); ?>
+					<?php 
+					the_content(); 
+					comments_template();
+					?>
 				</p>
 			<?php }
 		} ?>
 		</div>
 	</div>
 </div>
-<?php 
+<?php
 }
 if ( is_front_page() ) {
     get_footer('home');

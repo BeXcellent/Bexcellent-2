@@ -18,7 +18,7 @@ if (is_page('gateway')) {
 		</div>
 	</div>
 </div>
-<?php 
+<?php
 }
 if ( is_front_page() ) {
     get_footer('home');
