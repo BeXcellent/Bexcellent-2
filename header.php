@@ -30,34 +30,28 @@
 				<a href="#" style="font-size: 10pt;" onclick="resizeText(10);"> T </a>
 				<a href="#" style="font-size: 11pt;" onclick="resizeText(11);"> T </a>
 				<a href="#" style="font-size: 12pt;" onclick="resizeText(12);"> T </a>
-				<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        
-			</div>
 		</div>
-		<div class="row" id="menurow">
-			<div class="col-md-11 col-md-offset-1">
-				<ul class="nav nav-pills" id="navbar">
-					<li><a href="#">TODO</a></li>
-					<li><a href="#">Do the</a></li>
-					<li><a href="#">Proper</a></li>
-					<li><a href="#">PHP</a></li>
-					<li><a href="#">Things</a></li>
-					<li>
-						<form role="form" class="form-inline" id="searchform">
-							<div class="form-group">
-								<input placeholder="Search" class="form-control" type="search">
-								<button class="btn btn-primary">Go</button>
-							</div>
-						</form>
-					</li>
-					<li>
-						<button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
-						<p id="clickbubbletext">Try clicking on a bubble...</p>
-					</li>
-				</ul>
-			</div>
+	</div>
+	<div class="row" id="menurow">
+		<div class="col-md-11 col-md-offset-1">
+			<ul class="nav nav-pills" id="navbar">
+				<li><a href="#">TODO</a></li>
+				<li><a href="#">Do the</a></li>
+				<li><a href="#">Proper</a></li>
+				<li><a href="#">PHP</a></li>
+				<li><a href="#">Things</a></li>
+				<li>
+					<form role="form" class="form-inline" id="searchform">
+						<div class="form-group">
+							<input placeholder="Search" class="form-control" type="search">
+							<button class="btn btn-primary">Go</button>
+						</div>
+					</form>
+				</li>
+				<li>
+					<button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+					<p id="clickbubbletext">Try clicking on a bubble...</p>
+				</li>
+			</ul>
 		</div>
+	</div>
