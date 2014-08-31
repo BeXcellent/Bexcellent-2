@@ -46,12 +46,7 @@
 					'walker'            => new wp_bootstrap_navwalker())
 				);
 				?>
-<!-- 				<form role="form" class="form-inline" id="searchform">
-					<div class="form-group">
-						<input placeholder="Search" class="form-control" type="search">
-						<button class="btn btn-primary">Go</button>
-					</div>
-				</form>
+<!--
 				<button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
 				<p id="clickbubbletext">Try clicking on a bubble...</p> -->
 			</div>

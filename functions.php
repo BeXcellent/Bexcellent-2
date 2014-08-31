@@ -142,17 +142,17 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 * @return null Null on failure with no changes to parameters.
 	 */
 	public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
-        if ( ! $element )
-            return;
+		if ( ! $element )
+			return;
 
-        $id_field = $this->db_fields['id'];
+		$id_field = $this->db_fields['id'];
 
-        // Display this element.
-        if ( is_object( $args[0] ) )
-           $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
+		// Display this element.
+		if ( is_object( $args[0] ) )
+			$args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
 
-        parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-    }
+		parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+	}
 
 	/**
 	 * Menu Fallback
@@ -205,4 +205,20 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 }
 
 register_nav_menu( 'primary', 'Primary Menu' );
+function new_nav_menu_items($items, $args) {
+	if( $args->theme_location == 'primary' ){
+		$search = '<li><form role="form" class="form-inline" id="searchform">
+		<div class="form-group">
+		<input placeholder="Search" class="form-control" type="search">
+		<button class="btn btn-primary">Go</button>
+		</div>
+		</form></li>';
+		$bubbleBtn = '<li><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+		<p id="clickbubbletext">Try clicking on a bubble...</p></li>';
+		$items = $items.$search.$bubbleBtn;
+	}
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );
 ?>
+
