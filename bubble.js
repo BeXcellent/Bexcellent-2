@@ -29,10 +29,8 @@
  window.currentStage = 0;
  jQuery.fn.makeFloat = function() {
  	floating[floating.length] = $(this);
- 	console.log('Added ' + $(this) + ' to the float list');
  }
  jQuery.fn.nextStage = function() {
- 	console.log('NextStage');
  	if (currentStage == 0) {
  		for (var i = floating.length - 1; i >= 0; i--) {
  			$(floating[i]).animate({
@@ -83,6 +81,16 @@
  	$('#l8').makeFloat();
  	$('#l9').makeFloat();
  	$('#l10').makeFloat();
+ 	$('#l1-small').makeFloat();
+ 	$('#l2-small').makeFloat();
+ 	$('#l3-small').makeFloat();
+ 	$('#l4-small').makeFloat();
+ 	$('#l5-small').makeFloat();
+ 	$('#l6-small').makeFloat();
+ 	$('#l7-small').makeFloat();
+ 	$('#l8-small').makeFloat();
+ 	$('#l9-small').makeFloat();
+ 	$('#l10-small').makeFloat();
  	setInterval(function(){$().nextStage()}, 1000);
  	$().nextStage();
  });
