@@ -1,6 +1,6 @@
 <?php 
 if (is_page('gateway')) {
-	get_header('home');
+	get_header('gateway');
 }else{
 	get_header();
 	?>
@@ -28,7 +28,7 @@ if (is_page('gateway')) {
 	<?php
 }
 if (is_page('gateway')) {
-	get_footer('home');
+	get_footer('gateway');
 }else{
 	get_footer();
 }
