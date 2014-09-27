@@ -46,8 +46,5 @@
 					'walker'            => new wp_bootstrap_navwalker())
 				);
 				?>
-<!--
-				<button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
-				<p id="clickbubbletext">Try clicking on a bubble...</p> -->
 			</div>
 		</div>
