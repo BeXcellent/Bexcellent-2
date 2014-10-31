@@ -9,7 +9,7 @@ if (is_page('gateway')) {
 			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>
-					<p style="margin-top: 1%;" class="text-justified">
+					<p id="postcontent" class="text-justified">
 						<h1 class="text-center"><?php the_title(); ?> <small><?php the_time('F jS, Y'); ?></small></h1>
 						<?php 
 						the_content(); 
