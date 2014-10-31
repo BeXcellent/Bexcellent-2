@@ -9,8 +9,8 @@ if (is_page('gateway')) {
 			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>
-					<p id="postcontent" class="text-justified">
-						<h1 class="text-center"><?php the_title(); ?> <small><?php the_time('F jS, Y'); ?></small></h1>
+					<p id="postcontent">
+						<h1 class="text-center"><?php the_title(); ?><small><?php the_time('F jS, Y'); ?></small></h1>
 						<?php 
 						the_content(); 
 						comments_template();
