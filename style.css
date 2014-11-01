@@ -67,7 +67,9 @@ ul.catliststyle li {
     display: inline-block;
     
     width: 20%;
-    height: 20%;
+    height: 200px;
+    
+    padding: 2%;
 }
 
 ul.catliststyle li a {
