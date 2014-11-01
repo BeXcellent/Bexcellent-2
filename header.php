@@ -33,6 +33,10 @@
 				<a href="#" style="font-size: 12pt;" onclick="resizeText(12);"> T </a>
 			</div>
 		</div>
+                <div class="row">
+                    <li><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+                    <p id="clickbubbletext">Try clicking on a bubble...</p></li>
+                </div>
 		<div class="row" id="menurow">
 			<div class="col-md-11 col-md-offset-1">
 				<?php
