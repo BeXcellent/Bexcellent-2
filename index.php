@@ -9,7 +9,7 @@ if (is_page('gateway')) {
 			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>
-                                                <div style="text-align: center;">
+                                                <div id="wrapper" style="text-align: center;">
                                                         <h1 class="text-center"><?php the_title(); ?></h1>
                                                         <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
                                                         <p id="postcontent" class="text-center">
