@@ -7,13 +7,6 @@ var resizeText = function(size) {
     $('body').css('fontSize', String(size) + "pt");
 };
 
-
-/* Fix to the 'scattered' effect of catlist */
-$('ul.catliststyle li:nth-child(even)', '#wrapper').each(function() {
-    var $box = $(this);
-    $('<br/>').insertAfter($box);
-});
-
 /* Bubbles */
 var move_val = 40;
 function Bubble(css_selector){
