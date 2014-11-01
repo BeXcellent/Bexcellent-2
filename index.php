@@ -11,7 +11,7 @@ if (is_page('gateway')) {
 					the_post(); ?>
 					<p id="postcontent">
 						<h1 class="text-center"><?php the_title(); ?></h1>
-                                                <small id="thedate" class="text-right"><?php the_time('F jS, Y'); ?></small>
+                                                <h6 id="thedate" class="text-center"><?php the_time('F jS, Y'); ?></h6>
 						<?php 
 						the_content(); 
 						comments_template();
