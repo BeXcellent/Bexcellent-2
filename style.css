@@ -63,7 +63,7 @@ ul.catliststyle li {
     border-color: grey;
     border-radius: 20px;
     border-width: 2px;
-    margin: 5px;
+    margin: 5px 0px 5px 0px;
     display: inline-block;
     
     width: 220px;
