@@ -51,9 +51,14 @@ small {
     font-size: 11pt;
 }
 
-.catliststyle {
+.catliststyle ul {
     list-style-type: none;
-    color: darkblue;
+}
+
+.catliststyle li {
+    color: #010101;
+    font-size: 12pt;
+    
 }
 
 /*!
