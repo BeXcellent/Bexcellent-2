@@ -58,7 +58,7 @@ Author: The Bexcellent development team
     text-align: center;
 }
 
-.catliststyle li {
+ul.catliststyle li !important {
     border-style: solid;
     border-color: grey;
     border-radius: 10px;
