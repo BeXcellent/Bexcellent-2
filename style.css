@@ -51,14 +51,14 @@ Author: The Bexcellent development team
         font-size: 9pt;
 }
 
-.catliststyle {
+ul.catliststyle {
     list-style-type: none;
     color: #010101;
     font-size: 11pt;
     text-align: center;
 }
 
-ul.catliststyle li !important {
+ul.catliststyle li {
     border-style: solid;
     border-color: grey;
     border-radius: 10px;
