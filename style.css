@@ -74,6 +74,7 @@ ul.catliststyle li a {
     position: relative;
     top: 0px;
     left: 0px;
+    display: block;
 }
 
 
