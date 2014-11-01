@@ -64,15 +64,12 @@ ul.catliststyle li {
     border-radius: 10px;
     border-width: 2px;
     margin: 1%;
-    display: inline;
+    display: inline-block;
     
     width: 70px;
     height: 70px;
 }
 
-ul.catliststyle li a {
-    display: inline;
-}
 
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
