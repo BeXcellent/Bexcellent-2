@@ -198,8 +198,7 @@ register_nav_menu( 'primary', 'Primary Menu' );
 function new_nav_menu_items($items, $args) {
 	if( $args->theme_location == 'primary' ){
 		$search = get_search_form(false);
-		$bubbleBtn = '<li><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
-		<p id="clickbubbletext">Try clicking on a bubble...</p></li>';
+		$bubbleBtn = '';
 		$items = $items.$search.$bubbleBtn;
 	}
 	return $items;
