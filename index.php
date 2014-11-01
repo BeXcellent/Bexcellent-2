@@ -9,15 +9,14 @@ if (is_page('gateway')) {
 			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>
-                    <div style="text-align: center;">
-						<h1 class="text-center"><?php the_title(); ?></h1>
-                                                <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
-                                        <p id="postcontent" class="text-center">
-						<?php 
-						echo the_content();  ?>
-                                        </p>
-						<?php comments_template(); } } ?>
-                    </div>
+                                                <div style="text-align: center;">
+                                                        <h1 class="text-center"><?php the_title(); ?></h1>
+                                                        <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
+                                                        <p id="postcontent" class="text-center">
+                                                            <?php echo the_content();  ?>
+                                                        </p>
+                                                        <?php comments_template(); } } ?>
+                                                </div>
 				<div id="google_translate_element"></div><script type="text/javascript">
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
