@@ -66,15 +66,15 @@ ul.catliststyle li {
     margin: 5px;
     display: inline-block;
     
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     
     padding: 5px;
-    vertical-align: central;
 }
 
 ul.catliststyle li a {
     position: relative;
+    vertical-align: central;
     top: 0px;
     left: 0px;
     display: block;
