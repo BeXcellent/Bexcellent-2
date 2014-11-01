@@ -195,7 +195,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 }
 
 register_nav_menu( 'primary', 'Primary Menu' );
-function new_nav_menu_items($items, $args) {
+/*function new_nav_menu_items($items, $args) {
 	if( $args->theme_location == 'primary' ){
 		$search = get_search_form(false);
 		$bubbleBtn = '';
@@ -203,7 +203,7 @@ function new_nav_menu_items($items, $args) {
 	}
 	return $items;
 }
-add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );*/
 add_theme_support('post-thumbnails');
 ?>
 
