@@ -24,7 +24,11 @@
 				<img id="b7" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
 				<img id="b8" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
 				<img id="b9" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
-			</div>
+			
+                            <li style="float: right;"><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+                            <p id="clickbubbletext">Try clicking on a bubble...</p></li>
+                        
+                        </div>
 			<div class="col-md-1 textresizers" id="bubblesleftmarker">
 				<a href="#" style="font-size: 8pt;" onclick="resizeText(8);"> T </a>
 				<a href="#" style="font-size: 9pt;" onclick="resizeText(9);"> T </a>
@@ -32,9 +36,6 @@
 				<a href="#" style="font-size: 11pt;" onclick="resizeText(11);"> T </a>
 				<a href="#" style="font-size: 12pt;" onclick="resizeText(12);"> T </a>
 			</div>
-		
-                    <li style="float: right;"><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
-                    <p id="clickbubbletext">Try clicking on a bubble...</p></li>
                 </div>
 		<div class="row" id="menurow">
 			<div class="col-md-11 col-md-offset-1">
