@@ -66,8 +66,14 @@ ul.catliststyle li {
     margin: 1%;
     display: inline-block;
     
-    width: 24%;
-    height: 24%;
+    width: 20%;
+    height: 20%;
+}
+
+ul.catliststyle li a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 
