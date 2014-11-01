@@ -53,12 +53,9 @@ small {
 
 .catliststyle {
     list-style-type: none;
-}
-
-.catliststyle li {
     color: #010101;
     font-size: 12pt;
-    
+    text-align: center;
 }
 
 /*!
