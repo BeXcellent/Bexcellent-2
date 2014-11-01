@@ -46,10 +46,10 @@ Author: The Bexcellent development team
 }
 
 #thedate {
-    color: #666666; 
-    font-family: "Times New Roman";
-    font-size: 9pt;
-    text-align: right;
+        color: #666666; 
+        font-family: "Arial";
+        font-size: 9pt;
+        text-align: right;
 }
 
 .catliststyle {
