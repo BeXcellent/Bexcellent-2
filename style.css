@@ -66,6 +66,7 @@ ul.catliststyle li {
     border-width: 2px;
     margin: 1em;
     display: inline-block;
+    vertical-align: top;
     
     width: 220px;
     height: 220px;
