@@ -61,13 +61,13 @@ ul.catliststyle {
 ul.catliststyle li {
     border-style: solid;
     border-color: grey;
-    border-radius: 10px;
+    border-radius: 50px;
     border-width: 2px;
     margin: 5px;
     display: inline-block;
     
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     
     padding: 5px;
 }
