@@ -29,13 +29,6 @@
 				<img id="b8" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
 				<img id="b9" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
                         </div>
-			<div class="col-md-1 textresizers" id="bubblesleftmarker">
-				<a href="#" style="font-size: 8pt;" onclick="resizeText(8);"> T </a>
-				<a href="#" style="font-size: 9pt;" onclick="resizeText(9);"> T </a>
-				<a href="#" style="font-size: 10pt;" onclick="resizeText(10);"> T </a>
-				<a href="#" style="font-size: 11pt;" onclick="resizeText(11);"> T </a>
-				<a href="#" style="font-size: 12pt;" onclick="resizeText(12);"> T </a>
-			</div>
                 </div>
 		<div class="row" id="menurow">
 			<div class="col-md-11 col-md-offset-1">
