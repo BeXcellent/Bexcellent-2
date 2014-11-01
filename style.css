@@ -70,6 +70,8 @@ ul.catliststyle li {
     height: 220px;
     
     padding: 5px;
+    
+    position: relative;
 }
 
 ul.catliststyle li a {
