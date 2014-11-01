@@ -8,6 +8,12 @@ var resizeText = function(size) {
 };
 
 
+/* Fix to the 'scattered' effect of catlist */
+$('ul.catliststyle li:nth-child(even)', 'ul.catliststyle').each(function() {
+    var $box = $(this);
+    $('<br/>').insertAfter($box);
+});
+
 /* Bubbles */
 var move_val = 40;
 function Bubble(css_selector){
