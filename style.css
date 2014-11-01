@@ -49,13 +49,12 @@ Author: The Bexcellent development team
         color: #666666; 
         font-family: "Arial";
         font-size: 9pt;
-        text-align: right;
 }
 
 .catliststyle {
     list-style-type: none;
     color: #010101;
-    font-size: 12pt;
+    font-size: 11pt;
     text-align: center;
 }
 
