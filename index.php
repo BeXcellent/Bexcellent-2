@@ -15,7 +15,9 @@ if (is_page('gateway')) {
                                                         <p id="postcontent" class="text-center">
                                                             <?php echo the_content();  ?>
                                                         </p>
+                                                        <p style="color: #999999">
                                                         <?php comments_template(); } } ?>
+                                                        </p>
                                                 </div>
 				<div id="google_translate_element"></div><script type="text/javascript">
 				function googleTranslateElementInit() {
