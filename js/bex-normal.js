@@ -9,7 +9,7 @@ var resizeText = function(size) {
 
 
 /* Fix to the 'scattered' effect of catlist */
-$('ul.catliststyle li:nth-child(even)', 'ul.catliststyle').each(function() {
+$('ul.catliststyle li:nth-child(even)', '#wrapper').each(function() {
     var $box = $(this);
     $('<br/>').insertAfter($box);
 });
