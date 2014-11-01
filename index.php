@@ -10,7 +10,8 @@ if (is_page('gateway')) {
 				while ( have_posts() ) {
 					the_post(); ?>
 					<p id="postcontent">
-						<h1 class="text-center"><?php the_title(); ?><small><?php the_time('F jS, Y'); ?></small></h1>
+						<h1 class="text-center"><?php the_title(); ?></h1>
+                                                <small id="thedate"><?php the_time('F jS, Y'); ?></small>
 						<?php 
 						the_content(); 
 						comments_template();
