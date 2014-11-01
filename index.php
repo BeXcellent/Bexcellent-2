@@ -14,10 +14,11 @@ if (is_page('gateway')) {
                                                 <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
                                         <p id="postcontent" class="text-center">
 						<?php 
-						the_content(); 
-						comments_template();
+						the_content();  ?>
+                                        </p>
+						<?php comments_template();
 						?>
-					</p>
+					
 					<?php }
 				} ?>
 				<div id="google_translate_element"></div><script type="text/javascript">
