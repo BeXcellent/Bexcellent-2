@@ -14,7 +14,7 @@
 	<div class="container-fluid">
 		<div class="row">
                     
-                    <div style="float: right;"><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+                    <div style="float: right; margin-top:5px"><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
                     <p id="clickbubbletext">Try clicking on a bubble...</p></div>
                         
 			<div class="col-md-10 col-md-offset-1">
