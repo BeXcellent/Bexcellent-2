@@ -8,11 +8,12 @@ Author: The Bexcellent development team
 #title 
 {
 	width: 100%;
+        z-index: -5;
 }
 #searchform 
 {
 	margin-top: 1%;
-	z-index: 100;
+	z-index: 0;
 }
 #pagecontent 
 {
