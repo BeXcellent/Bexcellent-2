@@ -5,7 +5,7 @@ Description: Theme for the bexcellent website!
 Version: Doesnt matter
 Author: The Bexcellent development team
 */
-#title 
+#title
 {
 	width: 100%;
         z-index: -5;
@@ -13,14 +13,14 @@ Author: The Bexcellent development team
 #searchform 
 {
 	margin-top: 1%;
-	z-index: 0;
+	z-index: 1;
 }
 #pagecontent 
 {
 	margin-top: 1%;
 	background: linear-gradient(#dcdcdc, #fdfdfd);
 	border-radius: 1%;
-	z-index: 0;
+	z-index: 1;
 }
 
 #postcontent {
@@ -75,7 +75,7 @@ ul.catliststyle li a {
  /* class for all bubbles */
 .bubble {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     
     width: 5%;
 }
