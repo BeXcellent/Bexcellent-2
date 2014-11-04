@@ -38,11 +38,11 @@ Author: The Bexcellent development team
 
 #gatewayblurb{
     position: absolute;
-    top: 40%;
-    left: 70%;
+    top: 50%;
+    left: 65%;
     
-    color: cornflowerblue;
-    font-size: 24pt;
+    color: blue;
+    font-size: 20pt;
     font-family: "Arial";
 }
 
