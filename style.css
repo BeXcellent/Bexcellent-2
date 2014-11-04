@@ -23,10 +23,10 @@ Author: The Bexcellent development team
 	z-index: 1;
 }
 
-#wrapper {
+#wrapper p {
         font-family: "Arial";
         font-size: 13pt;
-        padding: 1%;
+        /* padding: 1%; */
 }
 
 #thedate {
