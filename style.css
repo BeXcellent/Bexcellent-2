@@ -71,7 +71,7 @@ div.catliststyle div a {
 }
 
 div.catliststyle div a img {
-    width: 220px;
+    max-width: 220px;
     max-height: 175px;
     border-radius: 20px;
     
