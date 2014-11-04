@@ -15,7 +15,7 @@ if (is_page('gateway')) {
                                                         
                                                         <?php echo the_content();  ?>
                                                         
-                                                        <p style="color: #999999">
+                                                        <p style="<?php if(stripos(comments_template(), "comments are closed") !== false) { echo "display:none"; } ?>">
                                                         <?php comments_template(); } } ?>
                                                         </p>
                                                 </div>
