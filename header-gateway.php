@@ -14,7 +14,39 @@
 	</style>
 </head>
 <body>
-	<div class="visible-sm visible-xs">
+        <div class="visible-sm visible-xs">
+		<div id="l1-small" class="linkbubble-small" style="left:0px; top: 0px;">
+                    <a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2014/03/bubble-1.jpg" alt="Videos"><p class="bubbletext"></p></a>
+		</div> 
+		<div id="l2-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/articles"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="Articles"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l3-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/about"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="About"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l4-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/photos"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="Photos"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l5-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/games"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="Games"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l6-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/news"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="News"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l7-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/parents"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="Parents"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l8-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/5-8"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="5-8" style="width: 114px; height: 115px;"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l9-small" class="linkbubble-small" style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/8-12"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="8-12"><p class="bubbletext"></p></a>
+		</div>
+		<div id="l10-small" class="linkbubble-small"  style="left:0px; top: 0px;">
+			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>wp-content/uploads/2014/03/bubble-1.jpg" alt="12-18"><p class="bubbletext"></p></a>
+		</div>
+	</div>
+	<!-- <div class="visible-sm visible-xs">
 		<div id="l1-small" class="linkbubble-small" style="left:0px; top: 0px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/video.png" alt="Videos"></a>
 		</div> 
@@ -45,8 +77,8 @@
 		<div id="l10-small" class="linkbubble-small"  style="left:0px; top: 0px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/12-18.png" alt="12-18"></a>
 		</div>
-	</div>
-	<div class="hidden-sm hidden-xs">
+	</div> -->
+	<!--<div class="hidden-sm hidden-xs">
 		<div id="l1" class="linkbubble" style="left: 145px; top: 155px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/video.png" alt="Videos"></a>
 		</div> 
@@ -76,10 +108,10 @@
 		</div>
 		<div id="l10" class="linkbubble" style="left: 95px; top: 480px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/12-18.png" alt="12-18"></a>
-		</div> 
+		</div> -->
 		<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.jpg" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
                 
-                <h3 id="gatewayblurb">The website made by young people for young people for all things </br><b>Curriculum for Excellence</b> 
+                <h3 id="gatewayblurb">The website made by young people for young people for all things</br><b>Curriculum for Excellence</b> 
                     </br>
                     <a href="http://www.sqa.org.uk/"><img src="//www1.sqa.org.uk/images/sqa-print-logo.gif"></a></br>
                     <a href="http://www.childreninscotland.org.uk/"> <img src="http://www.childreninscotland.org.uk/sites/all/themes/cis/logo.png"></a>
