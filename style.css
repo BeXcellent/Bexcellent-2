@@ -44,7 +44,7 @@ div.catliststyle {
     margin: 2em auto;
 }
 
-div.catliststyle div {
+div.catliststyle a {
     border-style: solid;
     border-color: cornflowerblue;
     border-radius: 20px;
@@ -59,7 +59,7 @@ div.catliststyle div {
     padding: 5px;
 }
 
-ul.catliststyle div a {
+div.catliststyle a a {
     position: relative;
     vertical-align: central;
     top: 0px;
