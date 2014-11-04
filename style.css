@@ -36,7 +36,7 @@ Author: The Bexcellent development team
         font-size: 9pt;
 }
 
-ul.catliststyle {
+div.catliststyle {
     list-style-type: none;
     color: #010101;
     font-size: 11pt;
@@ -44,7 +44,7 @@ ul.catliststyle {
     margin: 2em auto;
 }
 
-ul.catliststyle li {
+div.catliststyle a {
     border-style: solid;
     border-color: cornflowerblue;
     border-radius: 20px;
@@ -59,7 +59,7 @@ ul.catliststyle li {
     padding: 5px;
 }
 
-ul.catliststyle li a {
+ul.catliststyle a a {
     position: relative;
     vertical-align: central;
     top: 0px;
