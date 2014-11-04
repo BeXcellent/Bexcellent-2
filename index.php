@@ -12,8 +12,8 @@ if (is_page('gateway')) {
                                                 <div id="wrapper" style="text-align: center;">
                                                         <h1 class="text-center"><?php the_title(); ?></h1>
                                                         <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
-                                                        <p id="postcontent" class="text-left">
-                                                            <?php echo the_content();  ?>
+                                                        <p id="postcontent" style="text-align: left">
+                                                            <?php the_content();  ?>
                                                         </p>
                                                         <p style="color: #999999">
                                                         <?php comments_template(); } } ?>
