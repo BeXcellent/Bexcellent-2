@@ -15,7 +15,7 @@ if (is_page('gateway')) {
             <h6 id="thedate" class="text-center"><?php if (!is_page()){echo the_time('F jS, Y');} ?></h6>
                 <?php the_content();  ?>                      
                 <p>
-                                <?php comments_template(); } ?>
+                        <?php comments_template(); } } ?>
                 </p>
         </div>
         <div id="google_translate_element"></div><script type="text/javascript">
@@ -25,8 +25,9 @@ if (is_page('gateway')) {
         </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
 </div>
+                                   
 	<?php
-                        }           
+}               
 if (is_page('gateway')) {
 	get_footer('gateway');
 }else{
