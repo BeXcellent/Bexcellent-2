@@ -75,9 +75,16 @@ div.catliststyle div a img {
     max-height: 135px;
     border-radius: 20px;
     position:relative;
-    top: -2%;
+    top:-7%;
     
     opacity: 0.7;
+}
+
+div.catliststyle div a p {
+    display: inline;
+    text-align: center;
+    position: relative;
+    
 }
 
 /*!
