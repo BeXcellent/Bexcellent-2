@@ -134,6 +134,7 @@ div.catliststyle div a:hover {
 #bubblebutton {
     float: left;
     margin-bottom: 2%;
+    display: inline-block;
 }
 
 #clickbubbletext {
@@ -144,6 +145,8 @@ div.catliststyle div a:hover {
     color: chartreuse;
     font-family: 'Verdana';
     font-size: 16pt;
+    
+    display: inline-block;
 }
 
 /* hides the audio 'pop' sound */
