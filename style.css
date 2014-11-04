@@ -36,6 +36,16 @@ Author: The Bexcellent development team
         font-size: 9pt;
 }
 
+#gatewayblurb{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    
+    color: cornflowerblue;
+    font-size: 24pt;
+    font-family: "Arial";
+}
+
 div.catliststyle {
     list-style-type: none;
     color: #010101;
