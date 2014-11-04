@@ -15,6 +15,13 @@ function giveHREF($string) {
     return substr($string, $start, $end - $start);
 }
 
+function giveIMG($string) {
+    $imgloc = stripos($string, "<img");
+    $imgend = stripso($string, "</img>", $imgloc) + 5;
+    
+    return substr($string, $imgloc, $imgend - $imgloc);
+}
+
 /*
 Plugin Name: List Category Posts - Template "Default"
 Plugin URI: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/
@@ -74,7 +81,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Show the title and link to the post:
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
   //Post Thumbnail
-  $lcp_display_output .= '<div>'.$this->get_thumbnail($single).'</div></a>';
+  $lcp_display_output .= '<div>'.giveIMG($this->get_thumbnail($single)).'</div></a>';
 
   /**
    * Post content - Example of how to use tag and class parameters:
