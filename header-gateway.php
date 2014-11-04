@@ -92,7 +92,7 @@
 		</div>
 		<div id="l8" class="linkbubble" style="left: 50px; top: 55px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/5-8">
-                            <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="5-8" style="width: 114px; height: 115px;">
+                            <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="5-8"> <!-- style="width: 114px; height: 115px;" -->
                             <p class="bubbletext">5-8</p>
                         </a>
 		</div>
