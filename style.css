@@ -141,8 +141,9 @@ div.catliststyle div a:hover {
     margin-bottom: 2%;
     visibility: hidden;
     
-    color: green;
-    font-family: 'Arial';
+    color:greenyellow;
+    font-family: 'Verdana';
+    font-size: 16pt;
 }
 
 /* hides the audio 'pop' sound */
