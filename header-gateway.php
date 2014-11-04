@@ -79,5 +79,9 @@
 		</div> 
 		<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.jpg" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
                 
-                <h3 id="gatewayblurb">The website made by young people for young people for all things </br><b>Curriculum for Excellence</b></h3>
+                <h3 id="gatewayblurb">The website made by young people for young people for all things </br><b>Curriculum for Excellence</b> 
+                    </br></br>
+                    <p style="color:black">SQA <a href="http://www.sqa.org.uk/"><img src="//www1.sqa.org.uk/images/sqa-print-logo.gif"></a> </p>
+                    <p style="color:black">CiS <a href="http://www.childreninscotland.org.uk/"> <img src="http://www.childreninscotland.org.uk/sites/all/themes/cis/logo.png"> </a></p>
+                </h3>
 	</div>
