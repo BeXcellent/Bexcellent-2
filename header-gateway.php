@@ -87,7 +87,7 @@
 		<div id="l7" class="linkbubble" style="left: 695px; top: 470px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/applying">
                             <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="Apply">
-                            <p class="bubbletext">Apply Now!</p>
+                            <p class="bubbletext">Apply</p>
                         </a>
 		</div>
 		<div id="l8" class="linkbubble" style="left: 50px; top: 55px;">
