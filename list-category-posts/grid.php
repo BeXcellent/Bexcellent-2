@@ -3,7 +3,7 @@
 // custom function to remove HTML tags and extract the content.
 function chopHTMLtags($string) {
     $firsttagend = stripos($string, ">") + 1;
-    $endtagstart = stripos($string, "<", 1) - 1;
+    $endtagstart = stripos($string, "<", 1);
     
     return substr($string, $firsttagend, $endtagstart-$firsttagend);
 }
@@ -65,7 +65,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= '<a href="http://bexcellent.org.uk/'.strtolower(chopHTMLtags($this->get_post_title($single))).'/">';
 
   //Show the title and link to the post:
-  //$lcp_display_output .= '<p>'.$this->get_post_title($single).'</p>';
+  $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
   //Post Thumbnail
   $lcp_display_output .= $this->get_thumbnail($single).'</a>';
 
