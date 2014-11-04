@@ -50,3 +50,4 @@ if (is_page('gateway')) {
 }else{
 	get_footer();
 }
+?>
