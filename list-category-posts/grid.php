@@ -8,6 +8,13 @@ function chopHTMLtags($string) {
     return substr($string, $firsttagend, $endtagstart-$firsttagend);
 }
 
+function giveHREF($string) {
+    $start = stripos($string, "href=\"") + 7;
+    $end = stripos($string, "\"", $start);
+    
+    return substr($string, $start, $end - $start);
+}
+
 /*
 Plugin Name: List Category Posts - Template "Default"
 Plugin URI: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/
@@ -62,7 +69,7 @@ $lcp_display_output .= '<div class="catliststyle">';
  */
 foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
-  $lcp_display_output .= '<a href="http://bexcellent.org.uk/'.strtolower(chopHTMLtags($this->get_post_title($single))).'/">';
+  $lcp_display_output .= '<a href="'.giveHREF($this->get_post_title($single)).'/">';
 
   //Show the title and link to the post:
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
