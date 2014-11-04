@@ -9,12 +9,12 @@ if (is_page('gateway')) {
 			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>
-                                                <div id="wrapper" style="text-align: center;">
+                                                <div id="wrapper" style="text-align: left;">
                                                         <h1 class="text-center"><?php the_title(); ?></h1>
                                                         <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
-                                                        <p id="postcontent" style="text-align: left">
-                                                            <?php echo the_content();  ?>
-                                                        </p>
+                                                        
+                                                        <?php echo the_content();  ?>
+                                                        
                                                         <p style="color: #999999">
                                                         <?php comments_template(); } } ?>
                                                         </p>
