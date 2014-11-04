@@ -59,7 +59,7 @@ div.catliststyle a {
     padding: 5px;
 }
 
-ul.catliststyle a a {
+ul.catliststyle a p {
     position: relative;
     vertical-align: central;
     top: 0px;
