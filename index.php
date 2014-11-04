@@ -16,7 +16,7 @@ if (is_page('gateway')) {
                                                         
                                     <?php echo the_content();  ?>
                                     
-                                    <?php comments_template() ?>
+                                    <?php comments_template(); ?>
                                 </div>
                                 
 				<div id="google_translate_element"></div>
