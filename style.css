@@ -70,6 +70,10 @@ div.catliststyle div a {
     display: block;
 }
 
+div.catliststyle div a img {
+    width: max-content;
+    height: max-content;
+}
 
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
