@@ -78,4 +78,6 @@
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/12-18.png" alt="12-18"></a>
 		</div> 
 		<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.jpg" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
+                
+                <h3 id="gatewayblurb">The website made by young people for young people for all things Curriculum for Excellence</h3>
 	</div>
