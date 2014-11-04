@@ -83,13 +83,10 @@ div.catliststyle div a img {
 div.catliststyle div a p {
     display: inline;
     text-align: center;
-    position: relative;
-    
-    top: 2em;
     
     font-family: "Arial";
     font-size: 20pt;
-    color:lawngreen;
+    color: cornflowerblue;
     z-index: 3;
     
     opacity: 1;
