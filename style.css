@@ -88,16 +88,16 @@ div.catliststyle div a p {
     top: 2em;
     
     font-family: "Arial";
-    font-size: 16pt;
+    font-size: 20pt;
     color: cornflowerblue;
-    font-weight: bold;
     z-index: 3;
+    
+    opacity: 1;
 }
 
 div.catliststyle div a p:hover {
     text-decoration: none;
     color: cornflowerblue;
-    opacity: 1.0;
 }
 
 div.catliststyle div a:hover {
