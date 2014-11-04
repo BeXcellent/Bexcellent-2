@@ -1,4 +1,13 @@
 <?php
+
+// custom function to remove HTML tags and extract the content.
+function chopHTMLtags($string) {
+    $firsttagend = stripos($string, ">") + 1;
+    $endtagstart = stripos($string, "<", 1) - 1;
+    
+    return substr($string, $firsttagend, $endtagstart-$firsttagend);
+}
+
 /*
 Plugin Name: List Category Posts - Template "Default"
 Plugin URI: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/
@@ -53,12 +62,12 @@ $lcp_display_output .= '<div class="catliststyle">';
  */
 foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
-  $lcp_display_output .= '<div>'.$this->get_post_title($single);
+  $lcp_display_output .= '<a href="http://bexcellent.org.uk/'.strtolower(chopHTMLtags($this->get_post_title($single))).'/">';
 
   //Show the title and link to the post:
-  $lcp_display_output .= '<p>'.$this->get_post_title($single).'</p>';
+  //$lcp_display_output .= '<p>'.$this->get_post_title($single).'</p>';
   //Post Thumbnail
-  $lcp_display_output .= $this->get_thumbnail($single).'</div>';
+  $lcp_display_output .= $this->get_thumbnail($single).'</a>';
 
   /**
    * Post content - Example of how to use tag and class parameters:
