@@ -57,6 +57,9 @@ div.catliststyle div {
     height: 175px;
     
     padding: 5px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div.catliststyle div a {
