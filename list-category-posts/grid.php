@@ -76,7 +76,7 @@ $lcp_display_output .= '<div class="catliststyle">';
  */
 foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
-  $lcp_display_output .= '<a href="'.giveHREF($this->get_post_title($single)).'"><div>';
+  $lcp_display_output .= '<div><a href="'.giveHREF($this->get_post_title($single)).'">';
 
   //Show the title and link to the post:
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
@@ -97,7 +97,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= $this->get_excerpt($single, 'div', 'lcp_excerpt');
 */
   //Close li tag
-  $lcp_display_output .= '</div></a>';
+  $lcp_display_output .= '</a></div>';
 }
 
 $lcp_display_output .= '</div>'; // ends div here
