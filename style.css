@@ -26,6 +26,7 @@ Author: The Bexcellent development team
 #wrapper p {
         font-family: "Arial";
         font-size: 13pt;
+        text-align: justify;
         /* padding: 1%; */
 }
 
