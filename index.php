@@ -44,7 +44,6 @@ if (is_page('gateway')) {
 	</div>
 	<?php
         }               
-}
 if (is_page('gateway')) {
 	get_footer('gateway');
 }else{
