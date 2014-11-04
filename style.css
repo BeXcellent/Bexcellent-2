@@ -93,6 +93,7 @@ div.catliststyle div a p {
 div.catliststyle div a p:hover {
     text-decoration: none;
     color: cornflowerblue;
+    opacity: 1.0;
 }
 
 div.catliststyle div a:hover {
