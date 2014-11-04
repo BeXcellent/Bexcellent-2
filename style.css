@@ -71,8 +71,8 @@ div.catliststyle div a {
 }
 
 div.catliststyle div a img {
-    width: max-content;
-    height: max-content;
+    width: 100%;
+    height: 100%;
 }
 
 /*!
