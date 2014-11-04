@@ -81,7 +81,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Show the title and link to the post:
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
   //Post Thumbnail
-  $lcp_display_output .= '<div>'.$this->get_thumbnail($single).'</div>';
+  $lcp_display_output .= '<div>'.$this->get_thumbnail($single, "img").'</div>';
 
   
   /**
