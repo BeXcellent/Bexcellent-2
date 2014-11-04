@@ -78,7 +78,7 @@
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/12-18.png" alt="12-18"></a>
 		</div>
 	</div> -->
-	<!--<div class="hidden-sm hidden-xs">
+	<div class="hidden-sm hidden-xs">
 		<div id="l1" class="linkbubble" style="left: 145px; top: 155px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/video.png" alt="Videos"></a>
 		</div> 
@@ -108,7 +108,7 @@
 		</div>
 		<div id="l10" class="linkbubble" style="left: 95px; top: 480px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/12-18.png" alt="12-18"></a>
-		</div> -->
+		</div>
 		<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.jpg" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
                 
                 <h3 id="gatewayblurb">The website made by young people for young people for all things</br><b>Curriculum for Excellence</b> 
