@@ -214,7 +214,7 @@ audio {
 .bubbletext {
      position: relative;
      top: 2em;
-     left: 2em;
+     left: 1.8em;
      
      color: black;
      z-index: 5;
