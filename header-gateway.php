@@ -79,5 +79,5 @@
 		</div> 
 		<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.jpg" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
                 
-                <h3 id="gatewayblurb">The website made by young people for young people for all things Curriculum for Excellence</h3>
+                <h3 id="gatewayblurb">The website made by young people for young people for all things </br><b>Curriculum for Excellence</b></h3>
 	</div>
