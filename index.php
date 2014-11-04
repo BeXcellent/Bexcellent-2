@@ -13,7 +13,7 @@ if (is_page('gateway')) {
                                                         <h1 class="text-center"><?php the_title(); ?></h1>
                                                         <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
                                                         <p id="postcontent" style="text-align: left">
-                                                            <?php the_content();  ?>
+                                                            <?php echo the_content();  ?>
                                                         </p>
                                                         <p style="color: #999999">
                                                         <?php comments_template(); } } ?>
