@@ -89,7 +89,7 @@ div.catliststyle div a p {
     
     font-family: "Arial";
     font-size: 20pt;
-    color: cornflowerblue;
+    color:lawngreen;
     z-index: 3;
     
     opacity: 1;
@@ -97,7 +97,6 @@ div.catliststyle div a p {
 
 div.catliststyle div a p:hover {
     text-decoration: none;
-    color: cornflowerblue;
 }
 
 div.catliststyle div a:hover {
