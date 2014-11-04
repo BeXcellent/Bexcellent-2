@@ -15,10 +15,7 @@ if (is_page('gateway')) {
                                     <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
                                                         
                                     <?php echo the_content();  ?>
-                                                       
-                                </div>
-                    
-                                <div id="comments">
+                                    
                                     <?php comments_template() ?>
                                 </div>
                                 
