@@ -17,7 +17,7 @@ function giveHREF($string) {
 
 function giveIMG($string) {
     $imgloc = stripos($string, "<img");
-    $imgend = stripso($string, ">", $imgloc) + 1;
+    $imgend = stripso($string, ">", $imgloc);
     
     return substr($string, $imgloc, $imgend - $imgloc);
 }
