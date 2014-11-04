@@ -10,6 +10,7 @@ if (is_page('gateway')) {
 				while ( have_posts() ) {
 					the_post(); ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             
         <div id="wrapper">
             <h1 class="text-center"><?php the_title(); ?></h1>
@@ -33,6 +34,14 @@ if (is_page('gateway')) {
                                                         
                                                         <?php echo the_content();  ?>
                                                         
+=======
+                                                <div id="wrapper">
+                                                        <h1 class="text-center"><?php the_title(); ?></h1>
+                                                        <h6 id="thedate" class="text-center"><?php if (!is_page()) { echo the_time('F jS, Y'); } ?></h6>
+                                                        
+                                                        <?php echo the_content();  ?>
+                                                        
+>>>>>>> parent of 21b5da4... starting work on comments
                                                         <p style="<?php if(stripos(comments_template(), "comments are closed") !== false) { echo "display:none"; } ?>">
                                                         <?php comments_template(); } } ?>
                                                         </p>
