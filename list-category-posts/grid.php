@@ -83,9 +83,6 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Post Thumbnail
   $lcp_display_output .= '<div>'.$this->get_thumbnail($single).'</div>';
 
-  //testing
-  echo giveIMG($this->get_thumbnail($single));
-  
   
   /**
    * Post content - Example of how to use tag and class parameters:
