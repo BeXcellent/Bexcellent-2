@@ -44,7 +44,7 @@ define('BRANCH', 'master');
  *
  * @var string Full path including the trailing slash
  */
-define('TARGET_DIR', '/var/www/wp-content/themes/Bexcellent-2/');
+define('TARGET_DIR', 'http://bexcellent.org.uk/wp-content/themes/Bexcellent-2/');
 
 /**
  * Whether to delete the files that are not in the repository but are on the
