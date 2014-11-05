@@ -1,5 +1,21 @@
 <?php 
+    /*
+     * To edit the background image, place it's path on the server here.
+     */
     $bubble_path = get_template_directory_uri()."/texture/new_bubbles/single_bubble.png";
+    
+    $bubble_menu_items = [
+        "Videos", 
+        "Articles", 
+        "About", 
+        "Photos", 
+        "Games", 
+        "News", 
+        "Apply", 
+        "5-8", 
+        "8-12", 
+        "12-18"
+        ];
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,6 +33,7 @@
 	</style>
 </head>
 <body>
+    <!--
         <div class="visible-sm visible-xs">
 		<div id="l1-small" class="linkbubble-small" style="left:0px; top: 0px;">
                     <a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos"><img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2014/03/bubble-1.jpg" alt="Videos"><p class="bubbletext">Videos</p></a>
@@ -48,7 +65,7 @@
 		<div id="l10-small" class="linkbubble-small"  style="left:0px; top: 0px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/12-18"><img class="linkbubble-small" src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2014/03/bubble-1.jpg" alt="12-18"><p class="bubbletext"></p>12-18</a>
 		</div>
-	</div>
+	</div> -->
 	
 	<div class="hidden-sm hidden-xs">
 		<div id="l1" class="linkbubble" style="left: 145px; top: 155px;">
