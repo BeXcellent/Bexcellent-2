@@ -13,7 +13,7 @@ if (is_page('gateway')) {
         <div id="wrapper">
             <h1 class="text-center"><?php the_title(); ?></h1>
             <h6 id="thedate" class="text-center"><?php if (!is_page()){echo the_time('F jS, Y');} ?></h6>
-            <p>if this text appears, you are a legend!</p>
+            <p>you are a legend!</p>
                 <?php the_content();  ?>                      
                 <p>
                         <?php comments_template(); } } ?>
