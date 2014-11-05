@@ -7,7 +7,7 @@ Author: The Bexcellent development team
 */
 
 // The Be cellent image on normal pages
-img#title
+#title
 {
 	width: 100%;
         z-index: -5;
