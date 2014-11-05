@@ -245,6 +245,11 @@ audio {
 	height: 170px;
 	z-index: 1;
 }
+
+.linkbubble a:hover {
+    text-decoration: none;
+}
+
 .linkbubble-small {
 	display: inline-block;
 	position: relative;
