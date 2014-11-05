@@ -154,6 +154,10 @@ audio {
     visibility: hidden;
 }
 
+.nocomments {
+    display: none;
+}
+
 /* individual bubble placements */
 #b1 {
     top: 10%;
