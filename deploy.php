@@ -11,7 +11,7 @@
 	$commands = array(
                 'cd //var/www/wp-content/themes/Bexcellent-2',
 		'sudo git pull origin master',
-                'echo $PWD'
+                'yz127yb90'
 	);
  
 	// Run the commands for output
