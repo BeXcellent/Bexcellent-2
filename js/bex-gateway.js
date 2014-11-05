@@ -49,16 +49,6 @@ jQuery(document).ready(function($) {
 	$('#l8').makeFloat();
 	$('#l9').makeFloat();
 	$('#l10').makeFloat();
-	$('#l1-small').makeFloat();
-	$('#l2-small').makeFloat();
-	$('#l3-small').makeFloat();
-	$('#l4-small').makeFloat();
-	$('#l5-small').makeFloat();
-	$('#l6-small').makeFloat();
-	$('#l7-small').makeFloat();
-	$('#l8-small').makeFloat();
-	$('#l9-small').makeFloat();
-	$('#l10-small').makeFloat();
 	setInterval(function () {
 		for (var i = 0; i < window.floating.length; i++) {
 			$().nextStage(window.floating[i]);
