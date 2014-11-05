@@ -57,7 +57,7 @@
 		<div id="l2" class="linkbubble" style="left: 295px; top: 200px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/articles">
                             <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="Articles">
-                            <p class="bubbletext" style="left: 1.3em;">Articles</p>
+                            <p class="bubbletext" style="">Articles</p>
                         </a>
 		</div>
 		<div id="l3" class="linkbubble" style="left: 400px; top: 280px;">
