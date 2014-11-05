@@ -112,7 +112,7 @@
                 
                 <h3 id="gatewayblurb">The website made by young people for young people for all things</br><b>Curriculum for Excellence</b> 
                     </br>
-                    <a href="http://www.sqa.org.uk/"><img src="//www1.sqa.org.uk/images/sqa-print-logo.gif"></a></br>
-                    <a href="http://www.childreninscotland.org.uk/"> <img src="http://www.childreninscotland.org.uk/sites/all/themes/cis/logo.png"></a>
+                    <a href="http://www.sqa.org.uk/" target="_blank"><img src="//www1.sqa.org.uk/images/sqa-print-logo.gif"></a></br>
+                    <a href="http://www.childreninscotland.org.uk/" target="_blank"> <img src="http://www.childreninscotland.org.uk/sites/all/themes/cis/logo.png"></a>
                 </h3>
 	</div>
