@@ -306,3 +306,46 @@ img.linkbubble {
 	display: none;
 	z-index: 2;
 }
+
+
+/* NEW GATEWAY BUBBLE PLACEMENTS */
+#l1 {
+    left: 145px; 
+    top: 155px;
+}
+
+#l2 {
+    left: 295px; top: 200px;
+}
+
+#l3 {
+    left: 400px; top: 280px;
+}
+
+#l4 {
+    left: 475px; top: 155px;
+}
+
+#l5 {
+    left: 270px; top: 415px;
+}
+
+l6 {
+    left: 555px; top: 365px;
+}
+
+l7 {
+    left: 695px; top: 470px;
+}
+
+l8 {
+    left: 50px; top: 55px;
+}
+
+l9 {
+    left: 585px; top: 40px;
+}
+
+l10 {
+    left: 95px; top: 480px;
+}
