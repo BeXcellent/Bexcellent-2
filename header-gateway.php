@@ -51,7 +51,7 @@
 		<div id="l1" class="linkbubble" style="left: 145px; top: 155px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos">
                             <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="Videos">
-                            <p class="bubbletext">Videos</p>
+                            <p class="bubbletext" style="left: 1.0em;top: 1.8em;">Videos</p>
                         </a>
 		</div> 
 		<div id="l2" class="linkbubble" style="left: 295px; top: 200px;">
@@ -75,7 +75,7 @@
 		<div id="l5" class="linkbubble" style="left: 270px; top: 415px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/games">
                             <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="Games">
-                            <p class="bubbletext" style="left: 0.9em">Games</p>
+                            <p class="bubbletext" style="left: 0.8em">Games</p>
                         </a>
 		</div>
 		<div id="l6" class="linkbubble" style="left: 555px; top: 365px;">
@@ -93,7 +93,7 @@
 		<div id="l8" class="linkbubble" style="left: 50px; top: 55px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/5-8">
                             <img class="linkbubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="5-8"> <!-- style="width: 114px; height: 115px;" -->
-                            <p class="bubbletext">5-8</p>
+                            <p class="bubbletext" style="left: 1.3em; top:1.0em">5-8</p>
                         </a>
 		</div>
 		<div id="l9" class="linkbubble" style="left: 585px; top: 40px;">
