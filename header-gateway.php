@@ -67,7 +67,7 @@
 		</div>
 	</div> -->
 	
-	<div class="hidden-sm hidden-xs">
+	<div class="">
 		<div id="l1" class="linkbubble" style="left: 145px; top: 155px;">
 			<a target="_parent" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL']; ?>/gallery/videos">
                             <img class="linkbubble" src="<?php echo $bubble_path; ?>" alt="Videos">
