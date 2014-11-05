@@ -4,7 +4,7 @@
      */
     $bubble_path = get_template_directory_uri()."/texture/new_bubbles/single_bubble.png";
     
-    $bubble_menu_items = [
+    /*$bubble_menu_items = [
         "Videos", 
         "Articles", 
         "About", 
@@ -15,7 +15,7 @@
         "5-8", 
         "8-12", 
         "12-18"
-        ];
+        ];*/
 ?>
 <!DOCTYPE html>
 <html>
