@@ -9,7 +9,8 @@
  
 	// The commands
 	$commands = array(
-		'git pull origin master',
+                'cd //var/www/wp-content/themes/Bexcellent-2',
+		'git pull origin master'
 	);
  
 	// Run the commands for output
