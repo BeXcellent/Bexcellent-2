@@ -10,8 +10,8 @@
 	// The commands
 	$commands = array(
                 'cd //var/www/wp-content/themes/Bexcellent-2',
-		'sudo git pull origin master',
-                'yz127yb90'
+                'sudo su',
+		'git pull',
 	);
  
 	// Run the commands for output
