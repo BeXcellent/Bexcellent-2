@@ -155,7 +155,7 @@ audio {
 }
 
 .nocomments {
-    display: none;
+    visibility: hidden;
 }
 
 /* individual bubble placements */
