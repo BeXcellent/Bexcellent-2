@@ -10,7 +10,8 @@
 	// The commands
 	$commands = array(
                 'cd //var/www/wp-content/themes/Bexcellent-2',
-		'git pull origin master'
+		'sudo git pull origin master',
+                'echo $PWD'
 	);
  
 	// Run the commands for output
