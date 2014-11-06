@@ -162,6 +162,7 @@ div.catliststyle div a:hover {
     float: left;
     margin-bottom: 2%;
     display: inline-block;
+    z-index: 5;
 }
 
 #clickbubbletext {
