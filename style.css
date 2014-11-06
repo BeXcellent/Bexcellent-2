@@ -39,6 +39,9 @@ Author: The Bexcellent development team
 	width: 100%;
         z-index: -5;
 }
+#titlelink {
+        z-index: -4;
+}
 #searchform 
 {
 	margin-top: 1%;
