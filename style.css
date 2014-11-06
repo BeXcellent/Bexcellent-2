@@ -182,7 +182,7 @@ audio {
 }
 
 .nocomments {
-    visibility: hidden;
+    //visibility: hidden;
 }
 
 /* NORMAL BUBBLE PLACEMENTS */
