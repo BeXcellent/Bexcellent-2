@@ -6,7 +6,7 @@ if (is_page('gateway')) {
 	?>
 	<div class="row">
 		<div id="pagecontent" class="col-md-10 col-md-offset-1">
-			<?php if ( have_posts() ) {
+                    <?php   if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>
 					<p style="margin-top: 1%;" class="text-justified">
@@ -16,7 +16,12 @@ if (is_page('gateway')) {
 						?>
 					</p>
 					<?php }
-				} ?>
+				} 
+                            else { ?>
+                                        <h3>Sorry, no content matches your search :(</h3>
+                                        <p>Try modifying your search. If you believe there is a problem with search, please contact the administrators at 
+                                            <a href="mailto:bexcellentdev@gmail.com">bexcellentdev@gmail.com</a>.</p>
+                            <?php } ?>
 				<div id="google_translate_element"></div><script type="text/javascript">
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
