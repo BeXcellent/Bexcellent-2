@@ -1,4 +1,4 @@
-<?php if (comments_open()) : ?>
+<?php if (comments_open(get_the_id())) : ?>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
