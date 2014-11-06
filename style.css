@@ -142,6 +142,10 @@ div.catliststyle div a:hover {
     text-decoration: none;
 }
 
+#google_translate_element {
+    margin-bottom: 4%;
+}
+
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
