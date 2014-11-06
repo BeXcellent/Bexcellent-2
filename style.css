@@ -50,7 +50,7 @@ Author: The Bexcellent development team
 #pagecontent 
 {
 	margin-top: 1%;
-	background: linear-gradient(#dcdcdc, #fdfdfd);
+	background: linear-gradient(#DEE8FD, #fdfdfd); // #dcdcdc
 	border-radius: 1%;
 	z-index: 1;
 }
