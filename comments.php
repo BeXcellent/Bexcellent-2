@@ -10,7 +10,7 @@
         var dsq = document.createElement('script'); 
         dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        document.getElementByID('disqus_thread')[0]).appendChild(dsq);
+        document.getElementByID('disqus_thread').appendChild(dsq);
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
