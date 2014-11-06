@@ -13,10 +13,8 @@ if (is_page('gateway')) {
         <div id="wrapper">
             <h1 class="text-center"><?php the_title(); ?></h1>
             <h6 id="thedate" class="text-center"><?php if (!is_page()){echo the_time('F jS, Y');} ?></h6>
-                <?php the_content();  ?>                      
-                <p>
-                        <?php comments_template(); } } ?>
-                </p>
+                <?php the_content(); 
+                comments_template(); } } ?>
         </div>
         <div id="google_translate_element"></div><script type="text/javascript">
             function googleTranslateElementInit() {
