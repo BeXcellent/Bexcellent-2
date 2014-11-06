@@ -13,9 +13,11 @@ if (is_page('gateway')) {
         <div id="wrapper">
             <h1 class="text-center"><?php the_title(); ?></h1>
             <h6 id="thedate" class="text-center"><?php if (!is_page()){echo the_time('F jS, Y');} ?></h6>
-                <?php the_content(); 
-                comments_template(); } } ?>
+                <?php the_content(); ?>
         </div>
+        
+        <?php comments_template(); } } ?>
+        
         <div id="google_translate_element"></div><script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
