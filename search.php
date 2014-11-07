@@ -9,9 +9,8 @@ else get_header();
 			while ( have_posts() ) : 
 				the_post(); 
 			?>
-			search.php
 			<p style="margin-top: 1%;" class="text-justified">
-				<h1 class="text-center"><a href=""><?php the_title(); ?></a><small><?php the_time('F jS, Y'); ?></small></h1>
+				<h1 class="text-center"><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a><small><?php the_time('F jS, Y'); ?></small></h1>
 				<?php 
 				the_excerpt();
 				?>
