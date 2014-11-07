@@ -8,8 +8,7 @@ if (is_page('gateway')) {
     <div id="pagecontent" class="col-md-10 col-md-offset-1">
 			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
-					the_post(); ?>
-                                            
+					the_post(); ?>                  
         <div id="wrapper">
             <h1 class="text-center"><?php the_title(); ?></h1>
             <h6 id="thedate" class="text-center"><?php if (!is_page()){echo the_time('F jS, Y');} ?></h6>
