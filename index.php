@@ -6,10 +6,7 @@ if (is_page('gateway')) {
 	?>
 <div class="row">
     <div id="pagecontent" class="col-md-10 col-md-offset-1">
-			<?php if(strpos($_SERVER['PHP_SELF'], "http://bexcellent.org.uk/?s=") == true) {
-                            ?> <h4 style="color:red">Sorry, please use search terms </h4> <?php
-                        }
-                        else if ( have_posts() ) {
+			<?php if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post(); ?>                  
         <div id="wrapper">
