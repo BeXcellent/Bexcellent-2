@@ -204,6 +204,17 @@ function new_nav_menu_items($items, $args) {
 	return $items;
 }
 add_filter( 'wp_nav_menu_items', 'new_nav_menu_items', 10, 2 );
+
+
+add_filter( 'request', 'my_request_filter' );
+function my_request_filter( $query_vars ) {
+    if( isset( $_GET['s'] ) && empty( $_GET['s'] ) ) {
+        $query_vars['s'] = " ";
+    }
+    return $query_vars;
+}
+
+
 add_theme_support('post-thumbnails');
 ?>
 
