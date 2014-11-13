@@ -1,4 +1,6 @@
 Bexcellent-2
-============
+===
 
-The new improved wordpress theme for the BeXcellent website: [http://bexcellent.org.uk](http://bexcellent.org.uk)
+The theme for the [Bexcellent website](http://bexcellent.org.uk)!
+
+Please don't submit any pull requests but feel free to log any issues you find!
