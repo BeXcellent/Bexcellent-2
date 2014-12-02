@@ -22,6 +22,6 @@ body
 	background-attachment: fixed;
 }
 </style>
-<?php wp_footer(); ?>
+<?php echo wp_footer(); ?>
 </body>
 </html>
