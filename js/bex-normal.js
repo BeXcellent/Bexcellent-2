@@ -139,7 +139,7 @@ function bubblefunc(){
 }
 $(document).ready(function(){
     $(document).snowfall({
-        flakeCount : 800,
+        flakeCount : 300,
         maxSpeed : 10,
         maxSize: 4,
         round: true,
