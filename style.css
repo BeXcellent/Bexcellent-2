@@ -303,7 +303,10 @@ img.linkbubble {
 #super, .sub{
 	list-style-type: none;
 }
-
+#smallBlurbContainer
+{
+	text-align: center;
+}
 .sub li {
 	text-align: center;
 	position: relative;
@@ -342,6 +345,11 @@ img.linkbubble {
 
 #l2 {
     left: 295px; top: 200px;
+}
+.linkbubble-small *
+{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #l3 {
