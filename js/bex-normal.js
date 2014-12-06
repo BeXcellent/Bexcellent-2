@@ -138,6 +138,12 @@ function bubblefunc(){
     }
 }
 $(document).ready(function(){
+    $(document).snowfall({
+        flakeCount : 800,
+        maxSpeed : 10,
+        maxSize: 4,
+        round: true,
+    });
     $('#bubblebutton').click(function(){
         $(this).fadeOut(1000, function(){
             $('#clickbubbletext').css('visibility', 'visible');
