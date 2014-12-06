@@ -38,7 +38,7 @@
 </head>
 <body>
 	
-	<div class="visible-md">
+	<div>
             <?php 
                 $id_no = 1;
                 foreach($bubble_menu_items as $item => $url) { ?>
