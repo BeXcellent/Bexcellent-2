@@ -143,6 +143,7 @@ $(document).ready(function(){
         maxSpeed : 10,
         maxSize: 4,
         round: true,
+        collection: '#pagecontent'
     });
     $('#bubblebutton').click(function(){
         $(this).fadeOut(1000, function(){
