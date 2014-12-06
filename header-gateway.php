@@ -70,7 +70,7 @@
 			<?php 
                 $id_no = 1;
 			      foreach($bubble_menu_items as $item => $url) { ?>        
-                    <div id="l<?php echo $id_no?>-small" class="linkbubble-small">
+                    <div id="l<?php echo $id_no?>-small" class="linkbubble-small" style="left: 6px; top: 6px;">
 							<a target="_parent" href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URL'].$url; ?>">
                             	<img class="linkbubble" src="<?php echo $bubble_path; ?>" alt="Videos">
                             	<p class="bubbletext" style="left: 1.0em;top: 1.8em;"><?php echo $item; ?></p>
