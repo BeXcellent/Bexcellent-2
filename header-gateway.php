@@ -21,10 +21,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="windows-1252">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<meta name="google-translate-customization" content="a9ae1f2b766f7d2b-81ef0989257c4ff9-g6bca4490168a957a-11"></meta>
+	<meta name="description" content="Education, Educational, A different website, Interesting, Cool, Fun, Bexcellent is exellent, Resource, Engaging, Awesome." />
+	<?php echo wp_head(); ?>
 	<title>BeXcellent | Gateway</title>
 	<meta charset="windows-1252">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<style type="text/css">
 	body
 	{
@@ -35,7 +39,7 @@
 </head>
 <body>
 	
-	<div>
+	<div class="visible-md">
             <?php 
                 $id_no = 1;
                 foreach($bubble_menu_items as $item => $url) { ?>
