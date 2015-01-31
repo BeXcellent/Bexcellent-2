@@ -138,13 +138,13 @@ function bubblefunc(){
     }
 }
 $(document).ready(function(){
-    $(document).snowfall({
+    /*$(document).snowfall({
         flakeCount : 300,
         maxSpeed : 10,
         maxSize: 4,
         round: true,
         collection: '#pagecontent'
-    });
+    });*/
     $('#bubblebutton').click(function(){
         $(this).fadeOut(1000, function(){
             $('#clickbubbletext').css('visibility', 'visible');
