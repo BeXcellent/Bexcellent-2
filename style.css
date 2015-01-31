@@ -408,3 +408,7 @@ img.linkbubble {
 /*! jQuery UI - v1.11.0 - 2014-07-16
 * http://jqueryui.com
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+
+.people {
+    height: 620px;
+}
