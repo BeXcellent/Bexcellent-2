@@ -410,10 +410,13 @@ img.linkbubble {
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
 
 .people {
-    height: 620px;
-    width: 220px;
+    height: 625px;
+    width: 260px;
     margin: 5px;
     padding: 4px;
     border: 1px solid #aaa;
     border-radius: 4px;
+    float: center;
+    display: inline-block;
+    vertical-align: top;
 }
