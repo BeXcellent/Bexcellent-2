@@ -214,7 +214,4 @@ function my_request_filter( $query_vars ) {
     }
     return $query_vars;
 }
-
-
 ?>
-
