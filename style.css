@@ -411,6 +411,7 @@ img.linkbubble {
 
 .people {
     height: 620px;
+    width: 220px;
     margin: 5px;
     padding: 4px;
     border: 1px solid #ddd;
