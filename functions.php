@@ -1,4 +1,5 @@
 <?php
+add_theme_support('post-thumbnails');
 class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 	/**
@@ -215,6 +216,5 @@ function my_request_filter( $query_vars ) {
 }
 
 
-add_theme_support('post-thumbnails');
 ?>
 

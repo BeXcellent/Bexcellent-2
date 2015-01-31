@@ -33,7 +33,7 @@ Author: The Bexcellent development team
 
 /* NORMAL PAGES - index.php and header.php */
 
-// The Be cellent image on normal pages
+/* The Be cellent image on normal pages */
 #title
 {
 	width: 100%;
@@ -270,6 +270,8 @@ audio {
 	width: 170px;
 	height: 170px;
 	z-index: 1;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .linkbubble a:hover {
@@ -284,6 +286,7 @@ audio {
 }
 
 img.linkbubble {
+	margin: 0 auto;
 	opacity: 0.7;
 	width: 120px;
 	height: 120px;
@@ -294,10 +297,6 @@ img.linkbubble {
 	width: 50px;
 	height: 50px;
 	z-index: 5;
-}
-* {
-	margin: 0px;
-	padding: 0px;
 }
 
 #super, .sub{
@@ -384,7 +383,7 @@ img.linkbubble {
     left: 95px; top: 480px;
 }
 
-// I have no idea what this is used for but I am keeping it just incase it's important...
+/*I have no idea what this is used for but I am keeping it just incase it's important...*/
 #bubble {
 	background-image: url('img/becellent.jpg');
 	background-position: 2px 120px;

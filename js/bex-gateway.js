@@ -14,25 +14,25 @@ jQuery.fn.nextStage = function(object) {
 		$(object).animate({
 			'left': parseInt($(object).attr('originleft')) + 'px',
 			'top': parseInt($(object).attr('origintop')) + 10 + 'px'
-		}, 1000);
+		}, 1000, 'linear');
 	}
 	if (currentStage === 1) {
 		$(object).animate({
 			'left': parseInt($(object).attr('originleft')) - 10 + 'px',
 			'top': parseInt($(object).attr('origintop')) + 'px'
-		}, 1000);
+		}, 1000, 'linear');
 	} 
 	if (currentStage === 2) {
 		$(object).animate({
 			'left': parseInt($(object).attr('originleft')) + 'px',
 			'top': parseInt($(object).attr('origintop')) - 10 + 'px'
-		}, 1000);
+		}, 1000, 'linear');
 	} 
 	if (currentStage === 3) {
 		$(object).animate({
 			'left': parseInt($(object).attr('originleft')) + 10 + 'px',
 			'top': parseInt($(object).attr('origintop')) + 'px'
-		}, 1000);
+		}, 1000, 'linear');
 		$(object).attr('currentstage', 0);
 	} else{
 		$(object).attr('currentstage', currentStage + 1);

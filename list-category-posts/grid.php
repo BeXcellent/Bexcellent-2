@@ -79,10 +79,9 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= '<div><a href="'.giveHREF($this->get_post_title($single)).'">';
 
   //Show the title and link to the post:
-  $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
+  $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single));
   //Post Thumbnail
-  $lcp_display_output .= $this->get_thumbnail($single);
-
+  $lcp_display_output .= get_the_post_thumbnail($single->ID).'</p>';
   
   /**
    * Post content - Example of how to use tag and class parameters:

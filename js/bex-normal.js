@@ -150,7 +150,7 @@ $(document).ready(function(){
             $('#clickbubbletext').css('visibility', 'visible');
         });
         $('.bubble').click(function(){
-            $(this).effect('puff', {percent: 300}, 300, function(){
+            $(this).effect('puff', {percent: 200}, 300, function(){
                 document.getElementById("pop").play();
                 $('#clickbubbletext').fadeOut(1200, 'linear');
             });
