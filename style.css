@@ -407,3 +407,15 @@ img.linkbubble {
 /*! jQuery UI - v1.11.0 - 2014-07-16
 * http://jqueryui.com
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+
+.biorow > div.col-md-3 {
+    height: 625px;
+    width: 260px;
+    margin: 5px;
+    padding: 4px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    float: center;
+    display: inline-block;
+    vertical-align: top;
+}
