@@ -4,21 +4,21 @@
 function chopHTMLtags($string) {
     $firsttagend = stripos($string, ">") + 1;
     $endtagstart = stripos($string, "<", 1);
-    
+
     return substr($string, $firsttagend, $endtagstart-$firsttagend);
 }
 
 function giveHREF($string) {
     $start = stripos($string, "href=\"") + 6;
     $end = stripos($string, "\"", $start);
-    
+
     return substr($string, $start, $end - $start);
 }
 
 function giveIMG($string) {
     $imgloc = stripos($string, "<img");
     $imgend = stripso($string, ">", $imgloc+1);
-    
+
     return substr($string, $imgloc, $imgend - $imgloc);
 }
 
@@ -27,7 +27,7 @@ Plugin Name: List Category Posts - Template "Default"
 Plugin URI: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/
 Description: Template file for List Category Post Plugin for Wordpress which is used by plugin by argument template=value.php
 Version: 0.9
-Author: Radek Uldrych & Fernando Briano 
+Author: Radek Uldrych & Fernando Briano
 Author URI: http://picandocodigo.net http://radoviny.net
 */
 
@@ -35,7 +35,7 @@ Author URI: http://picandocodigo.net http://radoviny.net
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 3 of the License, or 
+the Free Software Foundation; either version 3 of the License, or
 any later version.
 
 This program is distributed in the hope that it will be useful,
@@ -82,7 +82,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single));
   //Post Thumbnail
   $lcp_display_output .= get_the_post_thumbnail($single->ID).'</p>';
-  
+
   /**
    * Post content - Example of how to use tag and class parameters:
    * This will produce:<p class="lcp_content">The content</p>
@@ -92,7 +92,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   /**
    * Post content - Example of how to use tag and class parameters:
    * This will produce:<div class="lcp_excerpt">The content</div>
-   
+
   $lcp_display_output .= $this->get_excerpt($single, 'div', 'lcp_excerpt');
 */
   //Close li tag

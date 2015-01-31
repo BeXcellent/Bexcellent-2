@@ -16,7 +16,7 @@ function changeBackground() {
 }
 </script>
 <style type="text/css">
-body 
+body
 {
 	background-image: url('<?php echo get_template_directory_uri(); ?>/texture/backgrounds/bg1.png');
 	background-repeat: no-repeat;

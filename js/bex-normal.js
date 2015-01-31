@@ -3,7 +3,7 @@ var resizeText = function(size) {
     if ($('body').css('fontSize') === "") {
         $('body').css('fontSize', '1.0em');
     }
-                
+
     $('body').css('fontSize', String(size) + "pt");
 };
 
@@ -23,30 +23,30 @@ function Bubble(css_selector){
     this.move = function(){
         $(""+this.selector).animate({top: "+="+this.deltaY+"px", left: "+="+this.deltaX+"px"}, {duration: 900, easing: 'linear'});
     };
-    
+
     this.updateMovementState = function(){
         var path = Math.floor(Math.random() * 8);
-        
+
         if(this.currentBorder === "top"){
             var choiceArray = [4, 5, 6];
             path = choiceArray[ Math.floor(Math.random() * 3) ];
         }
-        
+
         if(this.currentBorder === "bottom"){
             var choiceArray = [8, 1, 2];
             path = choiceArray[ Math.floor(Math.random() * 3) ];
         }
-        
+
         if(this.currentBorder === "left"){
             var choiceArray = [2, 3, 4];
             path = choiceArray[ Math.floor(Math.random() * 3) ];
         }
-        
+
         if(this.currentBorder === "right"){
             var choiceArray = [6, 7, 8];
             path = choiceArray[ Math.floor(Math.random() * 3) ];
         }
-        
+
         switch (path) {
             case 0:
                 this.deltaX = 0;
@@ -82,7 +82,7 @@ function Bubble(css_selector){
                 break;
         }
     };
-    
+
     this.isTouchingPageElement = function(){
         this.update();
         if(this.top > parseInt($(window).height())/2 ) {
@@ -106,7 +106,7 @@ function Bubble(css_selector){
             return false;
         }
     };
-    
+
     this.counter = 0;
     this.action = function(){
         if(this.isTouchingPageElement()) {
@@ -119,11 +119,11 @@ function Bubble(css_selector){
         this.move();
         ++this.counter;
     };
-    
-    $(''+this.selector).click(function(){ 
-        $(''+this.selector).fadeOut(2000); 
+
+    $(''+this.selector).click(function(){
+        $(''+this.selector).fadeOut(2000);
     });
-    
+
     this.startX = parseInt( $(''+this.selector).css('left') );
     this.startY = parseInt( $(''+this.selector).css('top') );
     this.reset = function(){

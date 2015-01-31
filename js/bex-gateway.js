@@ -21,13 +21,13 @@ jQuery.fn.nextStage = function(object) {
 			'left': parseInt($(object).attr('originleft')) - 10 + 'px',
 			'top': parseInt($(object).attr('origintop')) + 'px'
 		}, 1000, 'linear');
-	} 
+	}
 	if (currentStage === 2) {
 		$(object).animate({
 			'left': parseInt($(object).attr('originleft')) + 'px',
 			'top': parseInt($(object).attr('origintop')) - 10 + 'px'
 		}, 1000, 'linear');
-	} 
+	}
 	if (currentStage === 3) {
 		$(object).animate({
 			'left': parseInt($(object).attr('originleft')) + 10 + 'px',
