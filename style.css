@@ -229,6 +229,7 @@ audio {
 	background-image: url('img/becellent.jpg');
 	background-position: 2px 120px;
 	background-repeat: no-repeat;
+    background-size: 100%;
 	z-index: -1;
 }
 
