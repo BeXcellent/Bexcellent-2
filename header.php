@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-xs-12 col-md-4 col-md-offset-8 col-lg-2 col-lg-offset-10 text-right">
+        	<div class="col-xs-12 col-md-4 col-md-offset-8 text-right">
         			<button id="bubblebutton" type="button" style="width:100%" class="btn btn-primary btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
                     <p id="clickbubbletext">Try clicking on a bubble...</p>
         	</div>
