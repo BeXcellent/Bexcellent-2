@@ -86,7 +86,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= '<div class="col-md-3"><a href="'.giveHREF($this->get_post_title($single)).'">';
 
   //Show the title and link to the post:
-  $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single));
+  $lcp_display_output .= '<p style="text-align:center">'.chopHTMLtags($this->get_post_title($single));
   //Post Thumbnail
   $lcp_display_output .= '<img style="width:100%" src="'.giveSRC(get_the_post_thumbnail($single->ID)).'"></p>';
 
