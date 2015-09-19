@@ -15,6 +15,13 @@ function giveHREF($string) {
     return substr($string, $start, $end - $start);
 }
 
+function giveSRC($string) {
+    $start = stripos($string, "src=\"") + 6;
+    $end = stripos($string, "\"", $start);
+
+    return substr($string, $start, $end - $start);
+}
+
 function giveIMG($string) {
     $imgloc = stripos($string, "<img");
     $imgend = stripso($string, ">", $imgloc+1);
@@ -81,7 +88,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Show the title and link to the post:
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single));
   //Post Thumbnail
-  $lcp_display_output .= get_the_post_thumbnail($single->ID).'</p>';
+  $lcp_display_output .= '<img style="width:100%" src="'.giveSRC(get_the_post_thumbnail($single->ID)).'></p>';
 
   /**
    * Post content - Example of how to use tag and class parameters:
