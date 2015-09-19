@@ -16,7 +16,7 @@ function giveHREF($string) {
 }
 
 function giveSRC($string) {
-    $start = stripos($string, "src=\"") + 6;
+    $start = stripos($string, "src=\"") + 5;
     $end = stripos($string, "\"", $start);
 
     return substr($string, $start, $end - $start);
