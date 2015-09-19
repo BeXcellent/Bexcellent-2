@@ -15,10 +15,6 @@
 	<audio id="pop" src="<?php echo get_template_directory_uri(); ?>/pop.mp3"></audio>
 	<div class="container-fluid">
 		<div class="row" style="z-index: -5">
-
-                    <div style="float: right;"><button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
-                    <p id="clickbubbletext">Try clicking on a bubble...</p></div>
-
 			<div class="col-md-10 col-md-offset-1">
                                 <img class="img-responsive" id="title" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/background.png" alt="BeXcellent">
 				<img id="b1" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
@@ -30,8 +26,14 @@
 				<img id="b7" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
 				<img id="b8" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
 				<img id="b9" class="bubble" src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/single_bubble.png" alt="TEST">
-                        </div>
-                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-xs-12 col-md-4 col-md-offset-8 text-right">
+        			<button id="bubblebutton" type="button" class="btn btn-success btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+                    <p id="clickbubbletext">Try clicking on a bubble...</p>
+        	</div>
+        </div>
 		<div class="row" id="menurow">
 			<div class="col-md-11 col-md-offset-1">
 				<?php
