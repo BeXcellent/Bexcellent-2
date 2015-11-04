@@ -334,8 +334,11 @@ z-index: 1;
 
 #l7 {
     left: 695px; top: 470px;
+}
+#l7 img{
     height: 200px;
     width: 200px;
+    
 }
 
 #l8 {
