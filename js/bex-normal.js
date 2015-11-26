@@ -173,13 +173,13 @@ function onSetBubblesFreeClicked() {
 function onResetBubblesClicked() {
     clearInterval(bubble_interval);
     
-    for (var i = 0; i < bubbles.length; i++) {
-        bubbles[i].reset();
-        $(""+bubbles[i].selector).show();
-    }
-    
     $('#resetbubblesbutton').fadeOut(900, function(){
         $('#bubblebutton').show();
+
+        for (var i = 0; i < bubbles.length; i++) {
+            bubbles[i].reset();
+            $(""+bubbles[i].selector).show();
+        }
     });
     $('.bubble').off('click');
 }
