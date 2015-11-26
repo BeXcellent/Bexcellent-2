@@ -30,8 +30,9 @@
         </div>
         <div class="row">
         	<div class="col-xs-12 col-md-4 col-md-offset-8 text-right">
-        			<button id="bubblebutton" type="button" style="width:100%" class="btn btn-primary btn-lg" onclick="setInterval(bubblefunc, 900);">Set the Bubbles Free!!</button>
+        			<button id="bubblebutton" type="button" style="width:100%" class="btn btn-primary btn-lg" onclick="onSetBubblesFreeClicked();">Set the Bubbles Free!!</button>
                     <p id="clickbubbletext">Try clicking on a bubble...</p>
+                    <button id="resetbubblesbutton" type="buton" style="width:100%; display: none" class="btn btn-success btn-lg" onclick="onResetBubblesClicked();">Reset Bubbles</button>
         	</div>
         </div>
 		<div class="row" id="menurow">

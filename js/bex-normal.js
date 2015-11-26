@@ -145,20 +145,38 @@ $(document).ready(function(){
         round: true,
         collection: '#pagecontent'
     });*/
-    $('#bubblebutton').click(function(){
-        $(this).fadeOut(1000, function(){
-            $('#clickbubbletext').css('visibility', 'visible');
-        });
-        $('.bubble').click(function(){
-            $(this).effect('puff', {percent: 200}, 300, function(){
-                document.getElementById("pop").play();
-                $('#clickbubbletext').fadeOut(1200, 'linear');
-            });
-        });
-    });
+    
+
     bubbles = [ new Bubble("#b1"), new Bubble("#b2"), new Bubble("#b3"), new Bubble("#b4"), new Bubble("#b5"),
         new Bubble("#b6"), new Bubble("#b7"), new Bubble("#b8"), new Bubble("#b9") ];
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].updateMovementState();
     }
 });
+
+
+function onSetBubblesFreeClicked() {
+    setInterval(bubblefunc, 900);
+
+    $('#bubblebutton').fadeOut(1000, function(){
+            $('#clickbubbletext').css('visibility', 'visible');
+        });
+    $('.bubble').click(function(){
+            $(this).effect('puff', {percent: 200}, 300, function(){
+                document.getElementById("pop").play();
+                $('#clickbubbletext').fadeOut(1200, 'linear');
+            });
+        });
+    $('#resetbubblesbutton').show();
+}
+
+function onResetBubblesClicked() {
+    for (var i = 0; i < bubbles.length; i++) {
+        bubbles[i].reset();
+    }
+    
+    $('#resetbubblesbutton').fadeOut(900, function(){
+        $('#bubblebutton').show();
+    });
+    $('.bubble').off('click');
+}
