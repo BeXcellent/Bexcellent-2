@@ -31,7 +31,7 @@ Author: The Bexcellent development team
 }
 
 #wrapper p {
-    font-family: Arial;
+    font-family: 'Roboto';
     font-size: 13pt;
     text-align: justify;
     /* padding: 1%; */
@@ -39,7 +39,7 @@ Author: The Bexcellent development team
 
 #thedate {
     color: #666666;
-    font-family: Arial;
+    font-family: 'Roboto';
     font-size: 9pt;
 }
 
@@ -53,7 +53,7 @@ Author: The Bexcellent development team
 
     color: blue;
     font-size: 20pt;
-    font-family: Arial;
+    recommended Arial;
 }
 
 div.catliststyle {
@@ -104,7 +104,7 @@ div.catliststyle div a p {
     display: inline;
     text-align: center;
 
-    font-family: Arial;
+    font-family: 'Roboto';
     font-size: 20pt;
     color:#003aff;
     z-index: 3;
