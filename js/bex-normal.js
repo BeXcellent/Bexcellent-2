@@ -173,6 +173,7 @@ function onSetBubblesFreeClicked() {
 function onResetBubblesClicked() {
     clearInterval(bubble_interval);
     
+    $('#clickbubbletext').hide();
     $('#resetbubblesbutton').fadeOut(900, function(){
         $('#bubblebutton').show();
 
