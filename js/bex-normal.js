@@ -154,9 +154,9 @@ $(document).ready(function(){
     }
 });
 
-
+var bubble_interval;
 function onSetBubblesFreeClicked() {
-    setInterval(bubblefunc, 900);
+    bubble_interval = setInterval(bubblefunc, 900);
 
     $('#bubblebutton').fadeOut(1000, function(){
         $('#clickbubbletext').show();
@@ -171,6 +171,8 @@ function onSetBubblesFreeClicked() {
 }
 
 function onResetBubblesClicked() {
+    clearInterval(bubble_interval);
+    
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].reset();
         $(""+bubbles[i].selector).show();
