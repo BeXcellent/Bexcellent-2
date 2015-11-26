@@ -146,9 +146,7 @@ div.catliststyle div a:hover {
 #clickbubbletext {
     float: left;
     margin-bottom: 2%;
-    visibility: hidden;
 
-    color: chartreuse;
     font-family: 'Verdana';
     font-size: 16pt;
 
