@@ -68,7 +68,7 @@ $lcp_display_output = '';
 $lcp_display_output .= $this->get_category_link('strong');
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example: Changed to <div>
-$lcp_display_output .= '<div class="container-fluid layout_box"><div class="row">';
+$lcp_display_output .= '<div class="container-fluid"><div class="row">';
 
 /**
  * Posts loop.
@@ -83,7 +83,7 @@ $lcp_display_output .= '<div class="container-fluid layout_box"><div class="row"
  */
 foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
-  $lcp_display_output .= '<div class="col-md-3"><div class="thumbnail"><a href="'.giveHREF($this->get_post_title($single)).'">';
+  $lcp_display_output .= '<div class="col-md-3 layout_box"><div class="thumbnail"><a href="'.giveHREF($this->get_post_title($single)).'">';
 
   //Show the title and link to the post:
   $lcp_display_output .= '<p style="text-align:center">'.chopHTMLtags($this->get_post_title($single));
