@@ -389,3 +389,8 @@ z-index: 1;
     max-height: 200px;
     max-width: 100%;
 }
+
+.layout_box p {
+    text-align: center;
+    min-height: 75px;
+}
