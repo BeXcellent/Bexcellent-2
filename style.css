@@ -394,5 +394,6 @@ z-index: 1;
     text-align: center;
     max-height: 75px;
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 
