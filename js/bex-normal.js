@@ -88,28 +88,35 @@ function Bubble(css_selector){
         console.log("document width: " + parseInt($(document).width()));
         console.log("bubble width: " + parseInt($(""+this.selector).outerWidth()));
         console.log("left: " + this.left);
+        console.log("top: " + this.top);
 
-        if(this.top > parseInt($(document).height())/2 ) {
-            this.currentBorder = "bottom";
-            return true;
-        }
-        else if(this.top < 0) {
-            this.currentBorder = "top";
-            return true;
-        }
-        else if(this.left > parseInt($(document).width()) - parseInt($(""+this.selector).outerWidth()) - 5 ) {
+        if(this.left > 
+            (parseInt($(document).width()) - parseInt($(""+this.selector).outerWidth()) - 5) 
+            ) {
             console.log("choosing right border");
             this.currentBorder = "right";
             return true;
         }
-        else if(this.left < 0) {
+
+        if(this.top > parseInt($(document).height())/2 ) {
+            console.log("hit bottom");
+            this.currentBorder = "bottom";
+            return true;
+        }
+        
+        if(this.top < 0) {
+            console.log("hit top");
+            this.currentBorder = "top";
+            return true;
+        }
+        
+        if(this.left < 0) {
             this.currentBorder = "left";
             return true;
         }
-        else {
-            this.currentBorder = "none";
-            return false;
-        }
+        
+        this.currentBorder = "none";
+        return false;
     };
 
     this.counter = 0;
