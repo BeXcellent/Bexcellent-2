@@ -388,3 +388,7 @@ z-index: 1;
     max-height: 200px;
     max-width: 100%;
 }
+
+.layout_box .thumbnail {
+    min-height: 100%;
+}
