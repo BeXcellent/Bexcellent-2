@@ -392,5 +392,7 @@ z-index: 1;
 
 .layout_box p {
     text-align: center;
-    min-height: 75px;
+    max-height: 75px;
+    text-overflow: ellipsis;
 }
+
