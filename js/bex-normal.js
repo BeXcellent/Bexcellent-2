@@ -85,20 +85,20 @@ function Bubble(css_selector){
 
     this.isTouchingPageElement = function(){
         this.update();
-        console.log("document width: " + parseInt($(document).width()));
+        console.log("window width: " + parseInt($(window).width()));
         console.log("bubble width: " + parseInt($(""+this.selector).outerWidth()));
         console.log("left: " + this.left);
         console.log("top: " + this.top);
 
         if(this.left > 
-            (parseInt($(document).width()) - parseInt($(""+this.selector).outerWidth()) - 5) 
+            (parseInt($(window).width()) - parseInt($(""+this.selector).outerWidth()) - 5) 
             ) {
             console.log("choosing right border");
             this.currentBorder = "right";
             return true;
         }
 
-        if(this.top > parseInt($(document).height())/2 ) {
+        if(this.top > parseInt($(window).height())/2 ) {
             console.log("hit bottom");
             this.currentBorder = "bottom";
             return true;
