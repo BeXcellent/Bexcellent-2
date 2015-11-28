@@ -85,7 +85,9 @@ function Bubble(css_selector){
 
     this.isTouchingPageElement = function(){
         this.update();
-        console.log(parseInt($(document).width()))
+        console.log("document width: " + parseInt($(document).width()))
+        console.log("bubble width: " + parseInt($(""+this.selector).outerWidth()));
+
         if(this.top > parseInt($(document).height())/2 ) {
             this.currentBorder = "bottom";
             return true;
