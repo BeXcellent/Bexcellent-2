@@ -1,4 +1,13 @@
 <?php
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"), false, '2.1.4');
+    wp_enqueue_script('jquery');
+}
+
+
 /**
  * Class Name: wp_bootstrap_navwalker
  * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
@@ -149,10 +158,10 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
         // Display this element.
         if ( is_object( $args[0] ) )
-           $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
+         $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
 
-        parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-    }
+     parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+ }
 
     /**
      * Menu Fallback
