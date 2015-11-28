@@ -38,6 +38,7 @@
 		</div>
 		<div class="row" id="menurow">
 			<div class="col-sm-12">
+
 				<div class="navbar navbar-default transparent">
 					<nav class="navbar-inner">
 						<div class="container-fluid">
@@ -55,17 +56,19 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
 									
-									<?php
-									wp_nav_menu( array(
-										'theme_location'    => 'primary',
-										'container'			=> false,
-										'items_wrap'		=> '%3$s'
-										));
-										?>
-									</ul>
-								</div><!-- /.navbar-collapse -->
-							</div><!-- /.container-fluid -->
-						</nav>
-					</div>
+								<?php
+								wp_nav_menu( array(
+									'menu' => 'top_menu',
+									'depth' => 2,
+									'container' => false,
+									'items_wrap' => '%3$s',
+									'walker' => new wp_bootstrap_navwalker())
+								);
+								?>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
 				</div>
 			</div>
+		</div>
