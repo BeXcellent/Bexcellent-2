@@ -85,6 +85,7 @@ function Bubble(css_selector){
 
     this.isTouchingPageElement = function(){
         this.update();
+        console.log(parseInt($(window).width()))
         if(this.top > parseInt($(window).height())/2 ) {
             this.currentBorder = "bottom";
             return true;
@@ -93,9 +94,6 @@ function Bubble(css_selector){
             this.currentBorder = "top";
             return true;
         }
-
-        console.log(parseInt($(window).width()))
-
         else if(this.right > parseInt($(window).width()) - parseInt($(""+this.selector).outerWidth()) - 5 ) {
             console.log("choosing right border");
             this.currentBorder = "right";
