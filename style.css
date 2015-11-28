@@ -391,7 +391,7 @@ z-index: 1;
 }
 
 .layout_box p {
-    text-align: center;
+    text-align: center !important;
     max-height: 75px;
     text-overflow: ellipsis;
     overflow: hidden;
