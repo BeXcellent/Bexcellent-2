@@ -379,7 +379,7 @@ z-index: 1;
 
 
 .layout_box {
-    min-height: 270px;
+    min-height: 270px !important;
 }
 
 .layout_box img {
