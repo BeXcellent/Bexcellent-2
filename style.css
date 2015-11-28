@@ -376,3 +376,13 @@ z-index: 1;
     vertical-align: top;
 }
 
+
+
+.layout_box {
+    min-height: 270px;
+}
+
+.layout_box img {
+    max-height: 200px;
+    max-width: 100%;
+}
