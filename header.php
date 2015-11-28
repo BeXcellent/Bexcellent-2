@@ -38,7 +38,7 @@
 		</div>
 		<div class="row" id="menurow">
 			<div class="col-sm-12">
-				<nav class="navbar navbar-white">
+				<nav class="navbar navbar-white transparent">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
