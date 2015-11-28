@@ -9,8 +9,9 @@ Author: The Bexcellent development team
 /* NORMAL PAGES - index.php and header.php */
 
 /* The Be cellent image on normal pages */
-.navbar.transparent .navbar-inner {
-   background: rgba(0,0,0,0) !important;
+.navbar.transparent {
+   background: rgba(0,0,0,0); !important;
+   border: rgba(0,0,0,0); !important;
 }
 body {
     max-width: 100vw;
