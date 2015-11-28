@@ -93,7 +93,11 @@ function Bubble(css_selector){
             this.currentBorder = "top";
             return true;
         }
-        else if(this.left > parseInt($(window).width()) ) {
+
+        console.log(parseInt($(window).width()))
+
+        else if(this.right > parseInt($(window).width()) - parseInt($(""+this.selector).outerWidth()) - 5 ) {
+            console.log("choosing right border");
             this.currentBorder = "right";
             return true;
         }
