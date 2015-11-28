@@ -68,7 +68,7 @@ $lcp_display_output = '';
 $lcp_display_output .= $this->get_category_link('strong');
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example: Changed to <div>
-$lcp_display_output .= '<div class="container-fluid"><div class="row">';
+$lcp_display_output .= '<div class="container-fluid layout_box"><div class="row">';
 
 /**
  * Posts loop.
@@ -88,7 +88,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Show the title and link to the post:
   $lcp_display_output .= '<p style="text-align:center">'.chopHTMLtags($this->get_post_title($single));
   //Post Thumbnail
-  $lcp_display_output .= '<img style="width:100%" src="'.giveSRC(get_the_post_thumbnail($single->ID)).'"></p>';
+  $lcp_display_output .= '<img src="'.giveSRC(get_the_post_thumbnail($single->ID)).'"></p>';
 
   /**
    * Post content - Example of how to use tag and class parameters:
