@@ -33,8 +33,8 @@ body {
 #pagecontent
 {
     margin-top: 1%;
-    background: linear-gradient(#DEE8FD, #fdfdfd); // #dcdcdc
-    border-radius: 12px;
+    background: linear-gradient(#DEE8FD, #fdfdfd);
+    border-radius: 4px;
     z-index: 1;
 }
 
@@ -42,7 +42,7 @@ body {
     font-family: 'Roboto';
     font-size: 13pt;
     text-align: justify;
-    /* padding: 1%; */
+    padding: 7px;
 }
 
 #thedate {
