@@ -10,7 +10,7 @@ var resizeText = function(size) {
 var MARGIN = 10;
 
 /* Bubbles */
-var move_val = 40;
+var move_val = 3;
 function Bubble(css_selector){
     this.selector = css_selector;
     this.top = parseInt($(""+this.selector).css('top'));
@@ -24,7 +24,8 @@ function Bubble(css_selector){
         this.left = parseInt($(""+this.selector).css('left'));
     };
     this.move = function(){
-        $(""+this.selector).animate({top: "+="+this.deltaY+"px", left: "+="+this.deltaX+"px"}, {duration: 900, easing: 'linear'});
+        $(""+this.selector).css('top', String(this.left + this.deltaY)+"px");
+        $(""+this.selector).css('left', String(this.top + this.deltaX)+"px");
     };
 
     this.updateMovementState = function(){
