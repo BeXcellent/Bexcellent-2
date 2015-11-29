@@ -384,6 +384,7 @@ z-index: 1;
 .layout_box {
     min-height: 270px !important;
     padding: 10px !important;
+    border-radius: 8px !important;
 }
 
 .layout_box img {
