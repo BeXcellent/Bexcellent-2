@@ -9,8 +9,6 @@ var resizeText = function(size) {
 
 var FPS = 35;
 
-var MARGIN = 10;
-
 /* Bubbles */
 var move_val = 1;
 function Bubble(css_selector){
@@ -93,7 +91,7 @@ function Bubble(css_selector){
         this.update();
 
         if(this.left >= 
-            (parseInt($(window).innerWidth()) - (this.width + MARGIN)) 
+            (parseInt($(window).innerWidth()) - (this.width*3)) 
             ) {
             console.log("choosing right border");
             console.log("window width: " + parseInt($(window).innerWidth()));
