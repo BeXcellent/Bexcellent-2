@@ -172,7 +172,7 @@ function bubblefunc(){
         bubbles[i].action();
     }
 
-    if (run) {
+    if (run === true) {
         console.log("Starting again");
         setTimeout(1200, bubblefunc);
     }
