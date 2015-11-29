@@ -174,7 +174,7 @@ function bubblefunc(){
 
     if (run === true) {
         console.log("Starting again");
-        setTimeout(1200, bubblefunc);
+        setTimeout(bubblefunc, 1200);
     }
 }
 
