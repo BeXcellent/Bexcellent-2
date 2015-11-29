@@ -7,7 +7,7 @@ var resizeText = function(size) {
     $('body').css('fontSize', String(size) + "pt");
 };
 
-var FPS = 10;
+var FPS = 30;
 
 var MARGIN = 10;
 
