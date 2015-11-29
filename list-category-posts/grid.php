@@ -29,6 +29,8 @@ function giveIMG($string) {
     return substr($string, $imgloc, $imgend - $imgloc);
 }
 
+$DEFAULT_THUMBNAIL_SRC = "http://bexcellent.org.uk/wp-content/uploads/2014/03/title1.jpg";
+
 /*
 Plugin Name: List Category Posts - Template "Default"
 Plugin URI: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/
@@ -88,7 +90,11 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Show the title and link to the post:
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
   //Post Thumbnail
-  $lcp_display_output .= '<img src="'.giveSRC(get_the_post_thumbnail($single->ID)).'">';
+  $thumbnail_src = giveSRC(get_the_post_thumbnail($single->ID));
+  if ($thumbnail_src == '') {
+    $thumbnail_src = $DEFAULT_THUMBNAIL_SRC;
+  }
+  $lcp_display_output .= '<img src="'.$thumbnail_src.'">';
 
   /**
    * Post content - Example of how to use tag and class parameters:
