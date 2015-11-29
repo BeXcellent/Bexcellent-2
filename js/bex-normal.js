@@ -132,7 +132,7 @@ function Bubble(css_selector){
             this.updateMovementState();
         }
         this.move();
-        ++this.counter;
+        this.counter += 1;
     };
 
     /*$(''+this.selector).click(function(){
@@ -153,7 +153,7 @@ function bubblefunc(){
     }
 
     if (run) {
-        setTimeout(900, bubblefunc);
+        setTimeout(1200, bubblefunc);
     }
 }
 $(document).ready(function(){
