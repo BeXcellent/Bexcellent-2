@@ -383,11 +383,13 @@ z-index: 1;
 
 .layout_box {
     min-height: 270px !important;
+    padding: 10px !important;
 }
 
 .layout_box img {
     max-height: 200px;
     max-width: 100%;
+    border-radius: 4px;
 }
 
 .layout_box p {
