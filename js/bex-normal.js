@@ -147,15 +147,7 @@ function Bubble(css_selector){
     };
 }
 var bubbles = [];
-function bubblefunc(){
-    for (var i = 0; i < bubbles.length; i++) {
-        bubbles[i].action();
-    }
 
-    if (run) {
-        setTimeout(1200, bubblefunc);
-    }
-}
 $(document).ready(function(){
     /*$(document).snowfall({
         flakeCount : 300,
@@ -175,6 +167,17 @@ $(document).ready(function(){
 
 //var bubble_interval;
 var run = false;
+function bubblefunc(){
+    for (var i = 0; i < bubbles.length; i++) {
+        bubbles[i].action();
+    }
+
+    if (run) {
+        console.log("Starting again");
+        setTimeout(1200, bubblefunc);
+    }
+}
+
 function onSetBubblesFreeClicked() {
     $('#bubblebutton').fadeOut(1000, function(){
         $('#clickbubbletext').show();
