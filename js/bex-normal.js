@@ -168,6 +168,7 @@ $(document).ready(function(){
 
 //var bubble_interval;
 var run = false;
+var FPS = 30;
 function bubblefunc(){
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].action();
@@ -175,7 +176,7 @@ function bubblefunc(){
 
     if (run === true) {
         console.log("Starting again");
-        setTimeout(bubblefunc, 500);
+        setTimeout(bubblefunc, 1000 / FPS);
     }
 }
 
