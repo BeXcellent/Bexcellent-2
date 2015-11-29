@@ -94,7 +94,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //title
   $lcp_display_output .= '<p>'.chopHTMLtags($this->get_post_title($single)).'</p>';
   //Post Thumbnail
-  $thumbnail_src = giveSRC(get_the_post_thumbnail($single->ID));
+  $thumbnail_src = giveSRC(get_the_post_thumbnail($single->ID, array(200, 200)));
   if ($thumbnail_src == '') {
     $thumbnail_src = $DEFAULT_THUMBNAIL_SRC;
   }
