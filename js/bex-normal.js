@@ -168,7 +168,7 @@ $(document).ready(function(){
 
 //var bubble_interval;
 var run = false;
-var FPS = 30;
+var FPS = 20;
 function bubblefunc(){
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].action();
