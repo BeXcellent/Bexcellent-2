@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="row" id="menurow">
-			<div class="col-sm-12">
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
 
 				<div class="navbar navbar-default transparent">
 					<nav class="navbar-inner">
