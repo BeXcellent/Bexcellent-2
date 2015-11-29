@@ -10,7 +10,7 @@ var resizeText = function(size) {
 var MARGIN = 10;
 
 /* Bubbles */
-var move_val = 5;
+var move_val = 1;
 function Bubble(css_selector){
     this.selector = css_selector;
     this.top = parseInt($(""+this.selector).css('top'));
@@ -168,7 +168,7 @@ $(document).ready(function(){
 
 //var bubble_interval;
 var run = false;
-var FPS = 20;
+var FPS = 10;
 function bubblefunc(){
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].action();
