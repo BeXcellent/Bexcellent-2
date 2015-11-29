@@ -5,9 +5,9 @@
 $bubble_path = get_template_directory_uri()."/texture/new_bubbles/single_bubble.png";
 $bubble_menu_items = array(
     "Lifestyle" => "/lifestyle",
-    "Technology" => "/technology",
+    "Tech" => "/technology",
     "About" => "/about",
-    "Age Selection" => "/age-selection",
+    "Age" => "/age-selection",
     "The Team" => "/the-team",
     "News" => "/news",
     "CiS annual Conference" => "/bexcon",
