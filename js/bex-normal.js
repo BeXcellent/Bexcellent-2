@@ -7,12 +7,15 @@ var resizeText = function(size) {
     $('body').css('fontSize', String(size) + "pt");
 };
 
+var MARGIN = 10;
+
 /* Bubbles */
 var move_val = 40;
 function Bubble(css_selector){
     this.selector = css_selector;
     this.top = parseInt($(""+this.selector).css('top'));
     this.left = parseInt($(""+this.selector).css('left'));
+    this.width = parseInt($(""+this.selector).width());
     this.deltaX = move_val;
     this.deltaY = move_val;
     this.currentBorder = "none";
@@ -86,12 +89,12 @@ function Bubble(css_selector){
     this.isTouchingPageElement = function(){
         this.update();
         console.log("window width: " + parseInt($(window).width()));
-        console.log("bubble width: " + parseInt($(""+this.selector).outerWidth()));
+        console.log("bubble width: " + this.width);
         console.log("left: " + this.left);
         console.log("top: " + this.top);
 
         if(this.left > 
-            (parseInt($(window).width()) - parseInt($(""+this.selector).outerWidth()) - 5) 
+            (parseInt($(window).width()) - (this.width + MARGIN)) 
             ) {
             console.log("choosing right border");
             this.currentBorder = "right";
