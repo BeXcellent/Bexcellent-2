@@ -93,7 +93,7 @@ function Bubble(css_selector){
         console.log("left: " + this.left);
         console.log("top: " + this.top);
 
-        if(this.left > 
+        if(this.left >= 
             (parseInt($(window).innerWidth()) - (this.width + MARGIN)) 
             ) {
             console.log("choosing right border");
@@ -101,19 +101,19 @@ function Bubble(css_selector){
             return true;
         }
 
-        if(this.top > parseInt($(window).innerHeight())/2 ) {
+        if(this.top >= parseInt($(window).innerHeight())/2 ) {
             console.log("hit bottom");
             this.currentBorder = "bottom";
             return true;
         }
         
-        if(this.top < 0) {
+        if(this.top <= 0) {
             console.log("hit top");
             this.currentBorder = "top";
             return true;
         }
         
-        if(this.left < 0) {
+        if(this.left <= 0) {
             this.currentBorder = "left";
             return true;
         }
@@ -151,6 +151,10 @@ function bubblefunc(){
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].action();
     }
+
+    if (run) {
+        setTimeout(900, bubblefunc);
+    }
 }
 $(document).ready(function(){
     /*$(document).snowfall({
@@ -169,9 +173,11 @@ $(document).ready(function(){
     }
 });
 
-var bubble_interval;
+//var bubble_interval;
+var run = false;
 function onSetBubblesFreeClicked() {
-    bubble_interval = setInterval(bubblefunc, 900);
+    run = true;
+    //bubble_interval = setInterval(bubblefunc, 900);
 
     $('#bubblebutton').fadeOut(1000, function(){
         $('#clickbubbletext').show();
@@ -186,7 +192,8 @@ function onSetBubblesFreeClicked() {
 }
 
 function onResetBubblesClicked() {
-    clearInterval(bubble_interval);
+    //clearInterval(bubble_interval);
+    run = false;
     
     $('#clickbubbletext').hide();
     $('#resetbubblesbutton').fadeOut(900, function(){
