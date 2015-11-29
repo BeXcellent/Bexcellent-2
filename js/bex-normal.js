@@ -7,10 +7,12 @@ var resizeText = function(size) {
     $('body').css('fontSize', String(size) + "pt");
 };
 
+var FPS = 10;
+
 var MARGIN = 10;
 
 /* Bubbles */
-var move_val = 1;
+var move_val = 5 / FPS;
 function Bubble(css_selector){
     this.selector = css_selector;
     this.top = parseInt($(""+this.selector).css('top'));
@@ -128,7 +130,7 @@ function Bubble(css_selector){
         if(this.isTouchingPageElement()) {
             this.updateMovementState();
         }
-        if(this.counter === 15) {
+        if(this.counter === FPS * 4) {
             this.counter = 0;
             this.updateMovementState();
         }
@@ -168,7 +170,6 @@ $(document).ready(function(){
 
 //var bubble_interval;
 var run = false;
-var FPS = 10;
 function bubblefunc(){
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].action();
