@@ -135,9 +135,9 @@ function Bubble(css_selector){
         ++this.counter;
     };
 
-    $(''+this.selector).click(function(){
+    /*$(''+this.selector).click(function(){
         $(''+this.selector).fadeOut(2000);
-    });
+    });*/
 
     this.startX = parseInt( $(''+this.selector).css('left') );
     this.startY = parseInt( $(''+this.selector).css('top') );
@@ -176,9 +176,6 @@ $(document).ready(function(){
 //var bubble_interval;
 var run = false;
 function onSetBubblesFreeClicked() {
-    run = true;
-    //bubble_interval = setInterval(bubblefunc, 900);
-
     $('#bubblebutton').fadeOut(1000, function(){
         $('#clickbubbletext').show();
     });
@@ -189,6 +186,12 @@ function onSetBubblesFreeClicked() {
         });
     });
     $('#resetbubblesbutton').show();
+
+
+
+    run = true;
+    bubblefunc();
+    //bubble_interval = setInterval(bubblefunc, 900);
 }
 
 function onResetBubblesClicked() {
