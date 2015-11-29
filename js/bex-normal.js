@@ -12,7 +12,7 @@ var FPS = 10;
 var MARGIN = 10;
 
 /* Bubbles */
-var move_val = 5 / FPS;
+var move_val = 1;
 function Bubble(css_selector){
     this.selector = css_selector;
     this.top = parseInt($(""+this.selector).css('top'));
