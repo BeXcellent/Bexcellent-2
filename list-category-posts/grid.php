@@ -83,8 +83,12 @@ $lcp_display_output .= '<div class="container-fluid"><div class="row">';
  * You can now pass an html tag as a parameter. This tag will sorround the info
  * you want to display. You can also assign a specific CSS class to each field.
  */
+$count = 0;
 foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
+  if ($count == 0) {
+    $lcp_display_output .= '<div class="row">';
+  }
   $lcp_display_output .= '<div class="col-md-3"><div class="thumbnail layout_box"><a href="'.giveHREF($this->get_post_title($single)).'">';
 
   //Show the title and link to the post:
@@ -108,8 +112,13 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
   $lcp_display_output .= $this->get_excerpt($single, 'div', 'lcp_excerpt');
 */
-  //Close li tag
+  
   $lcp_display_output .= '</a></div></div>';
+
+  if ($count == 3) {
+    $count = 0;
+    $lcp_display_output .= '</div>'; // row
+  }
 }
 
 $lcp_display_output .= '</div></div>'; // ends div here
