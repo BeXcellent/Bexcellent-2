@@ -4,16 +4,16 @@
  */
 $bubble_path = get_template_directory_uri()."/texture/new_bubbles/single_bubble.png";
 $bubble_menu_items = array(
-    "Videos" => "/gallery/videos",
-    "Articles" => "/articles",
+    "Lifestyle" => "/lifestyle",
+    "Technology" => "/technology",
     "About" => "/about",
-    "Photos" => "/gallery/photos",
-    "Games" => "/games",
+    "Age Selection" => "/age-selection",
+    "The Team" => "/the-team",
     "News" => "/news",
     "CiS annual Conference" => "/bexcon",
-    "5-8" => "/5-8",
-    "8-12" => "/8-12",
-    "12-18" => "/12-18");?>
+    "Contact" => "/contact",
+    "Forum" => "",
+    "Gallery" => "/gallery");?>
 
 
     <!DOCTYPE html>
