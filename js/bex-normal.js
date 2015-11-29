@@ -7,7 +7,7 @@ var resizeText = function(size) {
     $('body').css('fontSize', String(size) + "pt");
 };
 
-var FPS = 30;
+var FPS = 35;
 
 var MARGIN = 10;
 
@@ -128,7 +128,7 @@ function Bubble(css_selector){
         if(this.isTouchingPageElement()) {
             this.updateMovementState();
         }
-        if(this.counter === FPS * 4) {
+        if(this.counter === FPS * 3) {
             this.counter = 0;
             this.updateMovementState();
         }
