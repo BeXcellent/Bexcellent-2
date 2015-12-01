@@ -3,17 +3,19 @@
  * To edit the background image, place it's path on the server here.
  */
 $bubble_path = get_template_directory_uri()."/texture/new_bubbles/single_bubble.png";
+$base_url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URL'];
+$forum_url = 'http://forum.bexcellent.org.uk/';
 $bubble_menu_items = array(
-    "Lifestyle" => "/lifestyle",
-    "Tech" => "/technology",
-    "About" => "/about",
-    "Age" => "/age-selection",
-    "The Team" => "/the-team",
-    "News" => "/news",
-    "CiS annual Conference" => "/bexcon",
-    "Contact" => "/contact",
-    "Forum" => "",
-    "Gallery" => "/gallery");?>
+    "Lifestyle" => $base_url."/lifestyle",
+    "Tech" => $base_url."/technology",
+    "About" => $base_url."/about",
+    "Age" => $base_url."/age-selection",
+    "The Team" => $base_url."/the-team",
+    "News" => $base_url."/news",
+    "CiS annual Conference" => $base_url."/bexcon",
+    "Contact" => $base_url."/contact",
+    "Forum" => $forum_url,
+    "Gallery" => $base_url."/gallery");?>
 
 
     <!DOCTYPE html>
@@ -44,7 +46,7 @@ $bubble_menu_items = array(
     foreach($bubble_menu_items as $item => $url) { ?>
 
     <div id="l<?php echo $id_no?>" class="linkbubble">
-       <a target="_parent" href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URL'].$url; ?>">
+       <a target="_parent" href="<?php echo $url; ?>">
         <img class="linkbubble" src="<?php echo $bubble_path; ?>" alt="Videos">
         <p class="bubbletext" style="left: 1.0em;top: 1.8em;"><?php echo $item; ?></p>
     </a>
