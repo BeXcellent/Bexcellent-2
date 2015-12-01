@@ -15,7 +15,7 @@ $bubble_menu_items = array(
     "CiS annual Conference" => $base_url."/bexcon",
     "Contact" => $base_url."/contact",
     "Forum" => $forum_url,
-    "Gallery" => $base_url."/gallery");?>
+    "Schools" => $base_url."/schools");?>
 
 
     <!DOCTYPE html>
