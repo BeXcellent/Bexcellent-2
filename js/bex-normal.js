@@ -7,12 +7,15 @@ var resizeText = function(size) {
     $('body').css('fontSize', String(size) + "pt");
 };
 
+var FPS = 35;
+
 /* Bubbles */
-var move_val = 40;
+var move_val = 1;
 function Bubble(css_selector){
     this.selector = css_selector;
     this.top = parseInt($(""+this.selector).css('top'));
     this.left = parseInt($(""+this.selector).css('left'));
+    this.width = parseInt($(""+this.selector).width());
     this.deltaX = move_val;
     this.deltaY = move_val;
     this.currentBorder = "none";
@@ -21,7 +24,8 @@ function Bubble(css_selector){
         this.left = parseInt($(""+this.selector).css('left'));
     };
     this.move = function(){
-        $(""+this.selector).animate({top: "+="+this.deltaY+"px", left: "+="+this.deltaX+"px"}, {duration: 900, easing: 'linear'});
+        $(""+this.selector).css('top', "+="+this.deltaY+"px");
+        $(""+this.selector).css('left', "+="+this.deltaX+"px");
     };
 
     this.updateMovementState = function(){
@@ -85,32 +89,30 @@ function Bubble(css_selector){
 
     this.isTouchingPageElement = function(){
         this.update();
-        console.log("window width: " + parseInt($(window).width()));
-        console.log("bubble width: " + parseInt($(""+this.selector).outerWidth()));
-        console.log("left: " + this.left);
-        console.log("top: " + this.top);
 
-        if(this.left > 
-            (parseInt($(window).width()) - parseInt($(""+this.selector).outerWidth()) - 5) 
+        if(this.left >= 
+            (parseInt($(window).innerWidth()) - (this.width*3)) 
             ) {
             console.log("choosing right border");
+            console.log("window width: " + parseInt($(window).innerWidth()));
+            console.log("bubble width: " + this.width);
+            console.log("left: " + this.left);
+            console.log("top: " + this.top);
             this.currentBorder = "right";
             return true;
         }
 
-        if(this.top > parseInt($(window).height())/2 ) {
-            console.log("hit bottom");
+        if(this.top >= parseInt($(window).innerHeight())/2 ) {
             this.currentBorder = "bottom";
             return true;
         }
         
-        if(this.top < 0) {
-            console.log("hit top");
+        if(this.top <= 0) {
             this.currentBorder = "top";
             return true;
         }
         
-        if(this.left < 0) {
+        if(this.left <= 0) {
             this.currentBorder = "left";
             return true;
         }
@@ -124,17 +126,17 @@ function Bubble(css_selector){
         if(this.isTouchingPageElement()) {
             this.updateMovementState();
         }
-        if(this.counter === 15) {
+        if(this.counter === FPS * 3) {
             this.counter = 0;
             this.updateMovementState();
         }
         this.move();
-        ++this.counter;
+        this.counter += 1;
     };
 
-    $(''+this.selector).click(function(){
+    /*$(''+this.selector).click(function(){
         $(''+this.selector).fadeOut(2000);
-    });
+    });*/
 
     this.startX = parseInt( $(''+this.selector).css('left') );
     this.startY = parseInt( $(''+this.selector).css('top') );
@@ -144,11 +146,7 @@ function Bubble(css_selector){
     };
 }
 var bubbles = [];
-function bubblefunc(){
-    for (var i = 0; i < bubbles.length; i++) {
-        bubbles[i].action();
-    }
-}
+
 $(document).ready(function(){
     /*$(document).snowfall({
         flakeCount : 300,
@@ -166,10 +164,20 @@ $(document).ready(function(){
     }
 });
 
-var bubble_interval;
-function onSetBubblesFreeClicked() {
-    bubble_interval = setInterval(bubblefunc, 900);
+//var bubble_interval;
+var run = false;
+function bubblefunc(){
+    for (var i = 0; i < bubbles.length; i++) {
+        bubbles[i].action();
+    }
 
+    if (run === true) {
+        console.log("Starting again");
+        setTimeout(bubblefunc, 1000 / FPS);
+    }
+}
+
+function onSetBubblesFreeClicked() {
     $('#bubblebutton').fadeOut(1000, function(){
         $('#clickbubbletext').show();
     });
@@ -180,10 +188,17 @@ function onSetBubblesFreeClicked() {
         });
     });
     $('#resetbubblesbutton').show();
+
+
+
+    run = true;
+    bubblefunc();
+    //bubble_interval = setInterval(bubblefunc, 900);
 }
 
 function onResetBubblesClicked() {
-    clearInterval(bubble_interval);
+    //clearInterval(bubble_interval);
+    run = false;
     
     $('#clickbubbletext').hide();
     $('#resetbubblesbutton').fadeOut(900, function(){
