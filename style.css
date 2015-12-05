@@ -8,6 +8,15 @@ Author: The Bexcellent development team
 
 /* NORMAL PAGES - index.php and header.php */
 
+div#preloaded-images {
+   position: absolute;
+   overflow: hidden;
+   left: -9999px; 
+   top: -9999px;
+   height: 1px;
+   width: 1px;
+}
+
 /* The Be cellent image on normal pages */
 .navbar.transparent {
    background: rgba(0,0,0,0); !important;
