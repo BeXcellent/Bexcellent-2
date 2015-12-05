@@ -54,7 +54,7 @@ $id_no += 1;
 }
 ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.jpg" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
+<img src="<?php echo get_template_directory_uri(); ?>/texture/new_bubbles/becellent.png" alt="BeXcellent" class="" style="position:absolute; top: 120px; left: 2px;"/>
 
 <h3 id="gatewayblurb">The website made by young people for young people for all things</br><b>Curriculum for Excellence</b>
 </br></br>
@@ -65,7 +65,7 @@ $id_no += 1;
 <div class="visible-xs visible-sm">
   <div class="row">
       <div class="col-sm-12">
-        <img src="<?php echo get_template_directory_uri(); ?>/texture/title.png" alt="BeXcellent" class="" style="width: 100vw;"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/texture/becellent.png" alt="BeXcellent" class="" style="width: 100vw;"/>
     </div>
     <?php
     $id_no = 1;
