@@ -5,7 +5,7 @@ wordpress:
   ports:
     - 80:80
   volumes:
-    - ./:/var/www/html/wp-content/themes/BeXcellent-2/
+    - .:/var/www/html/wp-content/themes/BeXcellent-2
 
 db:
   image: mariadb

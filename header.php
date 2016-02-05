@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo wp_title(); ?></title>
+	<title><?php echo wp_title(); ?> || OMG PLZ</title>
 	<?php echo wp_head(); ?>
 	<meta charset="windows-1252">
 	<meta name="viewport" content="width=device-width">
