@@ -67,7 +67,7 @@ $id_no += 1;
 <div class="visible-xs visible-sm">
   <div class="row">
       <div class="col-sm-12">
-        <img src="<?php echo get_template_directory_uri(); ?>/texture/becellent.png" alt="BeXcellent" class="" style="width: 100vw;"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/texture/bexcellent.jpg" alt="BeXcellent" class="" style="width: 100vw;"/>
     </div>
     <?php
     $id_no = 1;
